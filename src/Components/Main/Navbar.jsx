@@ -111,7 +111,7 @@ const Navbar = () => {
         <ListGroup className={Styles.ListGroup}>
           <Link onClick={doubleFunction} className={Styles.Navlink} to={"/"}>
             <ListGroup.Item className={Styles.ListGroupItem}>
-              <HomeIcon sx={{ color: "White", fontSize: 25 }} />
+              <img src={``} alt="" className={Styles.Navlink_Icon} />
               Home
             </ListGroup.Item>
           </Link>
@@ -122,7 +122,7 @@ const Navbar = () => {
             to={"About"}
           >
             <ListGroup.Item className={Styles.ListGroupItem}>
-              <InfoIcon sx={{ color: "White", fontSize: 25 }} />
+              <img src={``} alt="" className={Styles.Navlink_Icon} />
               About
             </ListGroup.Item>
           </Link>
@@ -133,7 +133,7 @@ const Navbar = () => {
             to={"Curriculums"}
           >
             <ListGroup.Item className={Styles.ListGroupItem}>
-              <AssignmentIcon sx={{ color: "White", fontSize: 25 }} />
+              <img src={``} alt="" className={Styles.Navlink_Icon} />
               Visit
             </ListGroup.Item>
           </Link>
@@ -144,7 +144,7 @@ const Navbar = () => {
             to={"Curriculums"}
           >
             <ListGroup.Item className={Styles.ListGroupItem}>
-              <AssignmentIcon sx={{ color: "White", fontSize: 25 }} />
+              <img src={``} alt="" className={Styles.Navlink_Icon} />
               Club
             </ListGroup.Item>
           </Link>
@@ -155,38 +155,31 @@ const Navbar = () => {
             to={"Documents"}
           >
             <ListGroup.Item className={Styles.ListGroupItem}>
-              <FolderIcon sx={{ color: "White", fontSize: 25 }} />
+              <img src={``} alt="" className={Styles.Navlink_Icon} />
               Sailing
             </ListGroup.Item>
           </Link>
 
           <Link onClick={doubleFunction} className={Styles.Navlink} to={"News"}>
             <ListGroup.Item className={Styles.ListGroupItem}>
-              <ArticleIcon sx={{ color: "White", fontSize: 25 }} />
+              <img src={``} alt="" className={Styles.Navlink_Icon} />
               Fishing
             </ListGroup.Item>
           </Link>
 
           <Link onClick={doubleFunction} className={Styles.Navlink} to={"News"}>
             <ListGroup.Item className={Styles.ListGroupItem}>
-              <ArticleIcon sx={{ color: "White", fontSize: 25 }} />
+              <img src={``} alt="" className={Styles.Navlink_Icon} />
               Membership
             </ListGroup.Item>
           </Link>
 
           <Link onClick={doubleFunction} className={Styles.Navlink} to={"News"}>
             <ListGroup.Item className={Styles.ListGroupItem}>
-              <ArticleIcon sx={{ color: "White", fontSize: 25 }} />
+              <img src={``} alt="" className={Styles.Navlink_Icon} />
               Updates
             </ListGroup.Item>
           </Link>
-
-          <a href={`Dog Water`} target={"_blank"} rel={"noreferrer"}>
-            <ListGroup.Item className={Styles.ListGroupItem}>
-              <GradeIcon sx={{ color: "White", fontSize: 25 }} />
-              Updates
-            </ListGroup.Item>
-          </a>
 
           <Link
             onClick={doubleFunction}
@@ -194,7 +187,7 @@ const Navbar = () => {
             to={"Contact"}
           >
             <ListGroup.Item className={Styles.ListGroupItem}>
-              <CallIcon sx={{ color: "White", fontSize: 25 }} />
+              <img src={``} alt="" className={Styles.Navlink_Icon} />
               Contact
             </ListGroup.Item>
           </Link>
