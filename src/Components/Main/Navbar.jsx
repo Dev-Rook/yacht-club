@@ -102,7 +102,7 @@ const Navbar = () => {
           />
           <div className={Styles.Diffuser}></div>
           <img
-            src={`https://github.com/Dev-Rook/hopewell-high/blob/master/src/Assets/Images/DJI_0501-min-min.JPG?raw=true`}
+            src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assests/Images/Boat-Floaters.jpeg?raw=true`}
             alt=""
             className={Styles.Header_Image}
           />
