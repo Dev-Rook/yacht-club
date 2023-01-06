@@ -11,10 +11,8 @@ import Hamburger from "hamburger-react";
 
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
-import FolderIcon from "@mui/icons-material/Folder";
-import AssignmentIcon from "@mui/icons-material/Assignment";
-import ArticleIcon from "@mui/icons-material/Article";
-import GradeIcon from "@mui/icons-material/Grade";
+import SailingIcon from "@mui/icons-material/Sailing";
+import Groups2Icon from "@mui/icons-material/Groups2";
 import CallIcon from "@mui/icons-material/Call";
 
 import InstagramIcon from "@mui/icons-material/Instagram";
@@ -111,7 +109,7 @@ const Navbar = () => {
         <ListGroup className={Styles.ListGroup}>
           <Link onClick={doubleFunction} className={Styles.Navlink} to={"/"}>
             <ListGroup.Item className={Styles.ListGroupItem}>
-              <img src={``} alt="" className={Styles.Navlink_Icon} />
+              <HomeIcon sx={{ color: "White", fontSize: 25 }} />
               Home
             </ListGroup.Item>
           </Link>
@@ -122,7 +120,7 @@ const Navbar = () => {
             to={"About"}
           >
             <ListGroup.Item className={Styles.ListGroupItem}>
-              <img src={``} alt="" className={Styles.Navlink_Icon} />
+              <InfoIcon sx={{ color: "White", fontSize: 25 }} />
               About
             </ListGroup.Item>
           </Link>
@@ -133,7 +131,11 @@ const Navbar = () => {
             to={"Curriculums"}
           >
             <ListGroup.Item className={Styles.ListGroupItem}>
-              <img src={``} alt="" className={Styles.Navlink_Icon} />
+              <img
+                src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assests/Icons/Anchor.png?raw=true`}
+                alt=""
+                className={Styles.Navlink_Icon}
+              />
               Visit
             </ListGroup.Item>
           </Link>
@@ -144,7 +146,7 @@ const Navbar = () => {
             to={"Curriculums"}
           >
             <ListGroup.Item className={Styles.ListGroupItem}>
-              <img src={``} alt="" className={Styles.Navlink_Icon} />
+              <Groups2Icon sx={{ color: "White", fontSize: 25 }} />
               Club
             </ListGroup.Item>
           </Link>
@@ -155,28 +157,40 @@ const Navbar = () => {
             to={"Documents"}
           >
             <ListGroup.Item className={Styles.ListGroupItem}>
-              <img src={``} alt="" className={Styles.Navlink_Icon} />
+              <SailingIcon sx={{ color: "White", fontSize: 25 }} />
               Sailing
             </ListGroup.Item>
           </Link>
 
           <Link onClick={doubleFunction} className={Styles.Navlink} to={"News"}>
             <ListGroup.Item className={Styles.ListGroupItem}>
-              <img src={``} alt="" className={Styles.Navlink_Icon} />
+              <img
+                src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assests/Icons/Fishing.png?raw=true`}
+                alt=""
+                className={Styles.Navlink_Icon}
+              />
               Fishing
             </ListGroup.Item>
           </Link>
 
           <Link onClick={doubleFunction} className={Styles.Navlink} to={"News"}>
             <ListGroup.Item className={Styles.ListGroupItem}>
-              <img src={``} alt="" className={Styles.Navlink_Icon} />
+              <img
+                src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assests/Icons/Membership.png?raw=true`}
+                alt=""
+                className={Styles.Navlink_Icon}
+              />
               Membership
             </ListGroup.Item>
           </Link>
 
           <Link onClick={doubleFunction} className={Styles.Navlink} to={"News"}>
             <ListGroup.Item className={Styles.ListGroupItem}>
-              <img src={``} alt="" className={Styles.Navlink_Icon} />
+              <img
+                src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assests/Icons/Updates.png?raw=true`}
+                alt=""
+                className={Styles.Navlink_Icon}
+              />
               Updates
             </ListGroup.Item>
           </Link>
@@ -187,7 +201,11 @@ const Navbar = () => {
             to={"Contact"}
           >
             <ListGroup.Item className={Styles.ListGroupItem}>
-              <img src={``} alt="" className={Styles.Navlink_Icon} />
+            <img
+                src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assests/Icons/Fishing.png?raw=true`}
+                alt=""
+                className={Styles.Navlink_Icon}
+              />
               Contact
             </ListGroup.Item>
           </Link>
