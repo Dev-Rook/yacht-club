@@ -13,7 +13,7 @@ const About = () => {
       <div className={Styles.PageHead}>
         <div className={Styles.Page_Title}>About</div>
         <div className={Styles.Diffuser}></div>
-        <img src={``} alt="" className={Styles.Heade_Image} />
+        <img src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assests/Images/Cayman-Spinnaker.jpg?raw=true`} alt="" className={Styles.Header_Image} />
       </div>
 
       <History />

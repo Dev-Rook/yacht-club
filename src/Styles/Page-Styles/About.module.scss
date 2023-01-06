@@ -24,6 +24,7 @@
     .Page_Title {
       font-size: 30px;
       font-weight: 300;
+      z-index: 1;
 
       // position: absolute;
       // bottom: 20px;
@@ -40,7 +41,11 @@
       background-color: rgba(0, 0, 0, 0.4);
     }
 
-    .Head_Image {
+    .Header_Image {
+      display: none;
+      position: absolute;
+      top: 0px;
+      left: 0px;
       height: 100%;
       width: 100%;
       object-fit: cover;
