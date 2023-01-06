@@ -1,0 +1,32 @@
+[
+    {
+        "id": 1,
+        "Icon": "https://github.com/Dev-Rook/hopewell-high/blob/master/src/Assets/Icons/Facility-Icon.png?raw=true",
+        "Title": "Great Facilities",
+        "Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae vero voluptates culpa quia quod exercitationem possimus sequi facilis quas non?"
+    },
+    {
+        "id": 2,
+        "Icon": "https://github.com/Dev-Rook/hopewell-high/blob/master/src/Assets/Icons/Teacher-Icon.png?raw=true",
+        "Title": "Sailing",
+        "Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae vero voluptates culpa quia quod exercitationem possimus sequi facilis quas non?"
+    },
+    {
+        "id": 3,
+        "Icon": "https://github.com/Dev-Rook/hopewell-high/blob/master/src/Assets/Icons/Science-Icon.png?raw=true",
+        "Title": "Fishing",
+        "Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae vero voluptates culpa quia quod exercitationem possimus sequi facilis quas non?"
+    },
+    {
+        "id": 4,
+        "Icon": "https://github.com/Dev-Rook/hopewell-high/blob/master/src/Assets/Icons/Sports-Icon.png?raw=true",
+        "Title": "Restaurant & Bar",
+        "Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae vero voluptates culpa quia quod exercitationem possimus sequi facilis quas non?"
+    },
+    {
+        "id": 5,
+        "Icon": "https://github.com/Dev-Rook/hopewell-high/blob/master/src/Assets/Icons/Art-Icon.png?raw=true",
+        "Title": "Venue & Rental",
+        "Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae vero voluptates culpa quia quod exercitationem possimus sequi facilis quas non?"
+    }
+]
