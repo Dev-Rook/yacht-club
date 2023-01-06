@@ -21,7 +21,6 @@ import FacebookIcon from "@mui/icons-material/Facebook";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
-
 const NavVariants = {
   hidden: {
     y: "-100vh",
@@ -68,7 +67,7 @@ const Navbar = () => {
 
   return (
     <nav className={Styles.Navbar}>
-      <div className={Styles.Image_Container}>
+      <div className={Styles.Image_Container} onClick={showMenu}>
         <img
           src={`https://github.com/Dev-Rook/minimal-portfolio/blob/main/src/Assets/Images/Carbon%20Claws.png?raw=true`}
           alt=""
@@ -76,52 +75,10 @@ const Navbar = () => {
         />
       </div>
 
-      <Breadcrumbs className={Styles.Navlink_Container} aria-label="breadcrumb">
-        <Link onClick={scrollUp} className={Styles.Navlink} to={"/"}>
-          {/* <HomeIcon sx={{ color: "White", fontSize: 25 }} /> */}
-          Home
-        </Link>
-
-        <Link onClick={scrollUp} className={Styles.Navlink} to={"AboutPage"}>
-          {/* <InfoIcon sx={{ color: "White", fontSize: 25 }} /> */}
-          About
-        </Link>
-
-        <Link onClick={scrollUp} className={Styles.Navlink} to={"Curriculums"}>
-          {/* <ListAltIcon sx={{ color: "White", fontSize: 25 }} /> */}
-          Club
-        </Link>
-
-        <Link onClick={scrollUp} className={Styles.Navlink} to={"Documents"}>
-          {/* <FolderIcon sx={{ color: "White", fontSize: 25 }} /> */}
-          Membership
-        </Link>
-
-        <Link onClick={scrollUp} className={Styles.Navlink} to={"News"}>
-          {/* <ArticleIcon sx={{ color: "White", fontSize: 25 }} /> */}
-          Articles
-        </Link>
-
-        <Link onClick={scrollUp} className={Styles.Navlink} to={"Contact"}>
-          {/* <CallIcon sx={{ color: "White", fontSize: 25 }} /> */}
-          Contact
-        </Link>
-      </Breadcrumbs>
-
-      <MenuIcon
+      {/* <MenuIcon
         onClick={showMenu}
         className={Styles.MenuIcon}
         sx={{ color: "black", fontSize: 40 }}
-      />
-
-      {/* <Hamburger
-        onClick={showMenu}
-        className={Styles.MenuIcon}
-        toggled={isOpen}
-        toggle={setOpen}
-        size={40}
-        direction="right"
-        label="Show menu"
       /> */}
 
       {/* Mobile Menu Start  */}

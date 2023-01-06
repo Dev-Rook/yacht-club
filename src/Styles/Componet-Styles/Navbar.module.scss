@@ -1,7 +1,7 @@
 .Navbar {
   display: flex;
-  background-color: rgba(0, 0, 0, 0.1);
-  backdrop-filter: blur(5px);
+  // background-color: rgba(0, 0, 0, 0.1);
+  // backdrop-filter: blur(5px);
 
   position: fixed;
   top: 0px;
@@ -9,8 +9,8 @@
 
   padding: 5px;
 
-  justify-content: space-between;
-  align-items: center;
+  justify-content: right;
+  align-items: flex-end;
 
   height: fit-content;
   width: 100%;
@@ -24,6 +24,7 @@
     border-radius: 50%;
 
     overflow: hidden;
+    cursor: pointer;
 
     display: flex;
     justify-content: center;

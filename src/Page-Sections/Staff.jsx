@@ -74,8 +74,8 @@ const Staff = () => {
                     <Link to={""} className={Styles.Link}>
                       <div className={Styles.Project_Card}>
                         <div className={Styles.Text_Container}>
+                          <p className={Styles.Name}>{value?.First_Name} {value?.Last_Name}</p>
                           <p className={Styles.Title}>{value?.Title}</p>
-                          <p className={Styles.Architect}>{value?.Architect}</p>
                         </div>
                         <div className={Styles.Diffuser}></div>
                         <div className={Styles.Image_Container}>
