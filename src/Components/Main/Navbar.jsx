@@ -81,7 +81,7 @@ const Navbar = () => {
           onToggle={setMenu}
           direction="right"
           // color="#ffffff"
-          duration={0.3}
+          duration={0.5}
           size={35}
         />
       </span>
