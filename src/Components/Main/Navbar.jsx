@@ -7,6 +7,7 @@ import ListGroup from "react-bootstrap/ListGroup";
 
 import MenuIcon from "@mui/icons-material/Menu";
 import CloseIcon from "@mui/icons-material/Close";
+import Hamburger from "hamburger-react";
 
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
@@ -74,6 +75,16 @@ const Navbar = () => {
           className={Styles.Logo}
         />
       </div>
+      <span className={Styles.Span}>
+        <Hamburger
+          className={Styles.HamburgerMenu}
+          onToggle={setMenu}
+          direction="right"
+          // color="#ffffff"
+          duration={0.3}
+          size={35}
+        />
+      </span>
 
       {/* <MenuIcon
         onClick={showMenu}

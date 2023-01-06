@@ -26,7 +26,7 @@
     overflow: hidden;
     cursor: pointer;
 
-    display: flex;
+    display: none;
     justify-content: center;
     align-items: center;
 
@@ -55,10 +55,10 @@
     }
   }
 
-  .MenuIcon {
+  .Span {
     display: flex;
     cursor: pointer;
-    // z-index: 100;
+    z-index: 200;
     // color: white;
   }
 
@@ -99,6 +99,7 @@
       overflow: hidden;
 
       .CloseIcon {
+        display: none;
         position: absolute;
         top: 0;
         right: 0;

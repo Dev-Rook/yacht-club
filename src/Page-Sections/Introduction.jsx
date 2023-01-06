@@ -12,11 +12,9 @@ const Introduction = () => {
             <p className={Styles.Question}>Who We Are</p>
             <p className={Styles.Brand}>Montego Bay Yach Club</p>
             <p className={Styles.Description}>
-              We strive to create and maintain an environment conducive to the
-              intellectual, moral, spiritual, social and cultural development of
-              learners: Thus equipping them with skills, values and attitudes
-              necessary for them to function at their fullest potential in
-              society.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+              consectetur? Voluptates placeat nesciunt rem doloribus quae eos
+              libero eveniet et.
             </p>
 
             <Link to={"AboutPage"}>
