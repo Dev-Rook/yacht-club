@@ -102,7 +102,7 @@ const Navbar = () => {
           />
           <div className={Styles.Diffuser}></div>
           <img
-            src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assests/Images/Boat-Floaters.jpeg?raw=true`}
+            src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assests/Images/Man-Cigar.jpeg?raw=true`}
             alt=""
             className={Styles.Header_Image}
           />
@@ -134,7 +134,18 @@ const Navbar = () => {
           >
             <ListGroup.Item className={Styles.ListGroupItem}>
               <AssignmentIcon sx={{ color: "White", fontSize: 25 }} />
-              Curriculums
+              Visit
+            </ListGroup.Item>
+          </Link>
+
+          <Link
+            onClick={doubleFunction}
+            className={Styles.Navlink}
+            to={"Curriculums"}
+          >
+            <ListGroup.Item className={Styles.ListGroupItem}>
+              <AssignmentIcon sx={{ color: "White", fontSize: 25 }} />
+              Club
             </ListGroup.Item>
           </Link>
 
@@ -145,21 +156,35 @@ const Navbar = () => {
           >
             <ListGroup.Item className={Styles.ListGroupItem}>
               <FolderIcon sx={{ color: "White", fontSize: 25 }} />
-              Documents
+              Sailing
             </ListGroup.Item>
           </Link>
 
           <Link onClick={doubleFunction} className={Styles.Navlink} to={"News"}>
             <ListGroup.Item className={Styles.ListGroupItem}>
               <ArticleIcon sx={{ color: "White", fontSize: 25 }} />
-              Articles
+              Fishing
+            </ListGroup.Item>
+          </Link>
+
+          <Link onClick={doubleFunction} className={Styles.Navlink} to={"News"}>
+            <ListGroup.Item className={Styles.ListGroupItem}>
+              <ArticleIcon sx={{ color: "White", fontSize: 25 }} />
+              Membership
+            </ListGroup.Item>
+          </Link>
+
+          <Link onClick={doubleFunction} className={Styles.Navlink} to={"News"}>
+            <ListGroup.Item className={Styles.ListGroupItem}>
+              <ArticleIcon sx={{ color: "White", fontSize: 25 }} />
+              Updates
             </ListGroup.Item>
           </Link>
 
           <a href={`Dog Water`} target={"_blank"} rel={"noreferrer"}>
             <ListGroup.Item className={Styles.ListGroupItem}>
               <GradeIcon sx={{ color: "White", fontSize: 25 }} />
-              Grades
+              Updates
             </ListGroup.Item>
           </a>
 
