@@ -11,12 +11,12 @@ const Updates = () => {
   return (
     <div className={Styles.Section}>
       <div className={Styles.Section_Title_Container}>
-        <p className={Styles.Question}>Blog</p>
-        <p className={Styles.Section_Title}>Some Of Our Latest Updates</p>
+        <p className={Styles.Question}>Updates</p>
+        <p className={Styles.Section_Title}>Latest Club Updates</p>
       </div>
       <div className={Styles.Content_Container}>
         {data &&
-          data.map((value) => {
+          data.slice(0, 3).map((value) => {
             return (
               <div className={Styles.Blog_Card} key={value.id}>
                 <div className={Styles.Image_Container}>

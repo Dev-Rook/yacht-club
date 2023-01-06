@@ -6,10 +6,11 @@ import NavigationIcon from "@mui/icons-material/Navigation";
 
 import Navbar from "./Components/Main/Navbar";
 import Footer from "./Components/Main/Footer";
-import Fallback from "./Components/Main/Fallback";
+import Fallback from "./Pages/Fallback";
 
 // Page Import Start
 const Landing = lazy(() => import("./Pages/Landing"));
+const About = lazy(() => import("./Pages/About"));
 // Page Import End
 
 function App() {
@@ -39,6 +40,7 @@ function App() {
         <Suspense fallback={<Fallback />}>
           <Routes>
             <Route path={"/"} element={<Landing />} />
+            <Route path={"About"} element={<About />} />
           </Routes>
         </Suspense>
         <Footer />
