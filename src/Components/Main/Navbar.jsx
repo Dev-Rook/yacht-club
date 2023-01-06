@@ -202,7 +202,7 @@ const Navbar = () => {
           >
             <ListGroup.Item className={Styles.ListGroupItem}>
             <img
-                src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assests/Icons/Fishing.png?raw=true`}
+                src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assests/Icons/Call.png?raw=true`}
                 alt=""
                 className={Styles.Navlink_Icon}
               />
