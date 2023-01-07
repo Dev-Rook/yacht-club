@@ -10,7 +10,7 @@ const Sailing = () => {
         <div className={Styles.Page_Title}>Sailing</div>
         <div className={Styles.Diffuser}></div>
         <img
-          src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Images/Floaters.jpeg?raw=true`}
+          src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Images/Page%20Header%20Images/Defender-Upwind-Border-5.jpg?raw=true`}
           alt=""
           className={Styles.Header_Image}
         />
