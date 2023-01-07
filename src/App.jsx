@@ -13,6 +13,7 @@ const Landing = lazy(() => import("./Pages/Landing"));
 const About = lazy(() => import("./Pages/About"));
 const Visit = lazy(() => import("./Pages/Visit"));
 const Updates = lazy(() => import("./Pages/Updates"));
+const Sailing = lazy(() => import("./Pages/Sailing"));
 // Page Import End
 
 function App() {
@@ -45,6 +46,7 @@ function App() {
             <Route path={"About"} element={<About />} />
             <Route path={"Visit"} element={<Visit />} />
             <Route path={"Updates"} element={<Updates />} />
+            <Route path={"Sailing"} element={<Sailing />} />
           </Routes>
         </Suspense>
         <Footer />

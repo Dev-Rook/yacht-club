@@ -1,8 +1,21 @@
-import React from 'react'
+import React, { useState } from "react";
+import { TabTitle } from "../Utilities/TabTitle";
+import Styles from "../Styles/Page-Styles/Sailing.module.scss";
 
 const Sailing = () => {
+  TabTitle("MBYC | Sailing");
   return (
-    <div>Sailing</div>
+    <div className={Styles.Page}>
+       <div className={Styles.PageHead}>
+        <div className={Styles.Page_Title}>Sailing</div>
+        <div className={Styles.Diffuser}></div>
+        <img
+          src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Images/Floaters.jpeg?raw=true`}
+          alt=""
+          className={Styles.Header_Image}
+        />
+      </div>
+    </div>
   )
 }
 
