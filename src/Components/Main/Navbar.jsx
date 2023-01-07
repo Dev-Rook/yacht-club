@@ -74,6 +74,7 @@ const Navbar = () => {
         />
       </div>
       <span className={Styles.Span}>
+        
         <Hamburger
           className={Styles.HamburgerMenu}
           onToggle={setMenu}
