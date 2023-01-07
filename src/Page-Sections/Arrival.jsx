@@ -9,8 +9,7 @@ const Arrival = () => {
 
         <p className={Styles.Description}>
           Call the Montego Bay Yacht Club on VHF Channel 16 for contact on
-          arrival. After berthing register at office (normal office hours only).{" "}
-          <br /> <br />
+          arrival. After berthing register at office (normal office hours only).
           The Office will call Customs and Immigration to have you cleared at
           the Club. Note: The following persons do not need a visa: - persons
           with EU, Commonwealth, USA & Canadian passports. Everyone else should
