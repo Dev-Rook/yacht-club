@@ -5,8 +5,9 @@ import Styles from "../Styles/Page-Styles/Landing.module.scss";
 // Page Section Import Start
 import Hero from "../Page-Sections/Hero";
 import Introduction from "../Page-Sections/Introduction";
-import Offer from "../Page-Sections/Offer"
-import Tour from "../Page-Sections/Tour"
+import PlanToVisit from "../Page-Sections/PlanToVisit";
+import Offer from "../Page-Sections/Offer";
+import Tour from "../Page-Sections/Tour";
 import BecomeAMember from "../Page-Sections/BecomeAMember";
 import Updates from "../Page-Sections/Updates";
 import Staff from "../Page-Sections/Staff";
@@ -19,6 +20,7 @@ const Landing = () => {
       {/* <Hero /> */}
       <Introduction />
       <Offer />
+      <PlanToVisit />
       <Tour />
       <BecomeAMember />
       <Updates />

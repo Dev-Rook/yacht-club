@@ -1,0 +1,93 @@
+.Section {
+  display: flex;
+  flex-direction: column;
+
+  justify-content: center;
+  align-items: center;
+
+  height: 100vh;
+  width: 100%;
+
+  .Content_Container {
+    display: flex;
+    flex-direction: column;
+
+    padding: 5px;
+    gap: 30px;
+
+    justify-content: center;
+    align-items: center;
+
+    height: fit-content;
+    width: 800px;
+
+    transition: 0.5s;
+
+    .Title {
+      font-size: 50px;
+      font-weight: 200;
+      text-align: center;
+      transition: 0.5s;
+    }
+
+    .Description {
+      font-size: 18px;
+      font-weight: 200;
+      text-align: center;
+      transition: 0.5s;
+    }
+
+    .Contact_Button {
+      border: 2px solid white;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 5px 20px;
+
+      display: flex;
+      cursor: pointer;
+
+      justify-content: center;
+      align-items: center;
+
+      height: fit-content;
+      width: fit-content;
+
+      transition: 0.3s;
+    }
+  }
+}
+
+// Media Queries Start
+
+@media only screen and (max-width: 810px) {
+  .Section {
+    .Content_Container {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .Section {
+    .Content_Container {
+      .Title {
+        font-size: 35px;
+      }
+      .Description {
+        font-size: 15px;
+      }
+    }
+  }
+}
+
+@media only screen and (max-width: 320px) {
+  .Section {
+    .Content_Container {
+      .Description {
+        font-size: 13px;
+      }
+    }
+  }
+}
+
+// Media Queries End
