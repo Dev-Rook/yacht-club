@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Styles from "../Styles/Page-Styles/Visit.module.scss";
 
 import UsefulInfo from "../Page-Sections/UsefulInfo";
+import Rates from "../Components/Secondary/Rates";
 
 const Visit = () => {
   TabTitle("MBYC | Visit");
@@ -35,7 +36,7 @@ const Visit = () => {
           <div className={Styles.Image_Container}>
             <img
               src={
-                "https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Images/ClubFlag.jpeg?raw=true"
+                "https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Images/SuperTramp.jpeg?raw=true"
               }
               alt=""
               className={Styles.Image}
@@ -44,6 +45,7 @@ const Visit = () => {
         </div>
       </div>
 
+      <Rates />
       <UsefulInfo />
     </div>
   );
