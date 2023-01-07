@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Styles from "../Styles/Page-Section-Styles/Updates.module.scss";
 
-import UpdatesData from "../Assests/Data/Updates.json"
+import UpdatesData from "../Assets/Data/Updates.json"
 
 const Updates = () => {
   const [data, setData] = useState(UpdatesData);

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Styles from "../Styles/Page-Section-Styles/HistoryDocs.module.scss";
 
-import HistoryData from "../Assests/Data/HistoryPdf.json";
+import HistoryData from "../Assets/Data/HistoryPdf.json";
 
 const HistoricalDocs = () => {
   const [data, setData] = useState(HistoryData);
