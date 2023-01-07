@@ -4,6 +4,7 @@ import { Link } from "react-router-dom";
 import Styles from "../Styles/Page-Styles/About.module.scss";
 
 import History from "../Page-Sections/History";
+import HistoricalDocs from "../Page-Sections/HistoricalDocs";
 
 const About = () => {
   TabTitle("MBYC | About");
@@ -17,6 +18,7 @@ const About = () => {
       </div>
 
       <History />
+      <HistoricalDocs />
     </div>
   );
 };
