@@ -11,6 +11,7 @@ import Fallback from "./Pages/Fallback";
 // Page Import Start
 const Landing = lazy(() => import("./Pages/Landing"));
 const About = lazy(() => import("./Pages/About"));
+const Visit = lazy(() => import("./Pages/Visit"));
 // Page Import End
 
 function App() {
@@ -41,6 +42,7 @@ function App() {
           <Routes>
             <Route path={"/"} element={<Landing />} />
             <Route path={"About"} element={<About />} />
+            <Route path={"Visit"} element={<Visit />} />
           </Routes>
         </Suspense>
         <Footer />
