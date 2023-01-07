@@ -24,7 +24,7 @@ const Introduction = () => {
           <div className={Styles.Image_Container}>
             <img
               src={
-                "https://github.com/Dev-Rook/yacht-club/blob/master/src/Assests/Images/ClubFlag.jpeg?raw=true"
+                "https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Images/ClubFlag.jpeg?raw=true"
               }
               alt=""
               className={Styles.Image}
