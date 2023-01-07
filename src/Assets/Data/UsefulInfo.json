@@ -3,36 +3,84 @@
         "id": 1,
         "Icon": "https://github.com/Dev-Rook/hopewell-high/blob/master/src/Assets/Icons/Facility-Icon.png?raw=true",
         "Title": "Water & Fuel",
-        "Description": "Water and diesel are available along the MBYC pier.   Gasoline is also available.  If you require over 2,000 gallons of diesel, please order ahead of time.  Jamaican water is safe to drink from the tap."
+        "Description": "Water and diesel are available along the MBYC pier. Gasoline is also available.  If you require over 2,000 gallons of diesel, please order ahead of time.  Jamaican water is safe to drink from the tap."
     },
     {
         "id": 2,
         "Icon": "https://github.com/Dev-Rook/hopewell-high/blob/master/src/Assets/Icons/Teacher-Icon.png?raw=true",
-        "Title": "Qualiified Educators",
-        "Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae vero voluptates culpa quia quod exercitationem possimus sequi facilis quas non?"
+        "Title": "Restaurant",
+        "Description": "The club's restaurant is open for lunch & dinner, seven days per week 10 am - 10 pm (for last orders)."
     },
     {
         "id": 3,
         "Icon": "https://github.com/Dev-Rook/hopewell-high/blob/master/src/Assets/Icons/Science-Icon.png?raw=true",
-        "Title": "Scientific Labs",
-        "Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae vero voluptates culpa quia quod exercitationem possimus sequi facilis quas non?"
+        "Title": "Charters",
+        "Description": "Information on fishing & sailing charters available."
     },
     {
         "id": 4,
         "Icon": "https://github.com/Dev-Rook/hopewell-high/blob/master/src/Assets/Icons/Sports-Icon.png?raw=true",
-        "Title": "Sport & Clubs",
-        "Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae vero voluptates culpa quia quod exercitationem possimus sequi facilis quas non?"
+        "Title": "Bar",
+        "Description": "The bar is located in the Club House and is open 7 days a week. Children under 16 are not permitted in the bar area.  Please request large ice orders from the bar by the evening before needed."
     },
     {
         "id": 5,
         "Icon": "https://github.com/Dev-Rook/hopewell-high/blob/master/src/Assets/Icons/Art-Icon.png?raw=true",
-        "Title": "Music & Art Studios",
-        "Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae vero voluptates culpa quia quod exercitationem possimus sequi facilis quas non?"
+        "Title": "House Rules",
+        "Description": "Bare chests and bathing suits are not permitted in the bar or in the Club Rooms. The dress code is casual - shorts slacks etc."
     },
     {
         "id": 6,
         "Icon": "https://github.com/Dev-Rook/hopewell-high/blob/master/src/Assets/Icons/Cadet-Icon.png?raw=true",
-        "Title": "Cadet",
-        "Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae vero voluptates culpa quia quod exercitationem possimus sequi facilis quas non?"
+        "Title": "Laundry",
+        "Description": "Laundry service is available at the MBYC.  Arrangements may be made with the office."
+    },
+    {
+        "id": 7,
+        "Icon": "https://github.com/Dev-Rook/hopewell-high/blob/master/src/Assets/Icons/Cadet-Icon.png?raw=true",
+        "Title": "Weather",
+        "Description": "Weather information is available from the Airport Authority at Montego Bay's Sangster International Airport - Tel: 952-O181. There is also the Weather Channel on the T.V. in the Clubhouse."
+    },
+    {
+        "id": 8,
+        "Icon": "https://github.com/Dev-Rook/hopewell-high/blob/master/src/Assets/Icons/Cadet-Icon.png?raw=true",
+        "Title": "Departures",
+        "Description": "Twenty four (24) hours before departure, notice of clearance should be given to MBYC office, which will arrange Customs and Immigration requirements."
+    },
+    {
+        "id": 9,
+        "Icon": "https://github.com/Dev-Rook/hopewell-high/blob/master/src/Assets/Icons/Cadet-Icon.png?raw=true",
+        "Title": "Provisioning",
+        "Description": "Groceries and liquor are available at the nearby Fairview, Westgate and Mega Mart Shopping Centers.  Fast food, electronics, pharmaceuticals, hardware and other items can be found at the Fairview Shopping Center."
+    },
+    {
+        "id": 10,
+        "Icon": "https://github.com/Dev-Rook/hopewell-high/blob/master/src/Assets/Icons/Cadet-Icon.png?raw=true",
+        "Title": "Banks",
+        "Description": "The Bank of Nova Scotia is located at the Fairview Shopping Center.  Alternative ATM options are also available in the same area."
+    },
+    {
+        "id": 11,
+        "Icon": "https://github.com/Dev-Rook/hopewell-high/blob/master/src/Assets/Icons/Cadet-Icon.png?raw=true",
+        "Title": "Restaurants",
+        "Description": "Montego Bay offers a variety of restaurants, many of which offer a free pick up service.  Please check with the Club for their assistance on this."
+    },
+    {
+        "id": 12,
+        "Icon": "https://github.com/Dev-Rook/hopewell-high/blob/master/src/Assets/Icons/Cadet-Icon.png?raw=true",
+        "Title": "Taxi Service",
+        "Description": "The office or bartender will be happy to assist with arranging a taxi, should one be required."
+    },
+    {
+        "id": 13,
+        "Icon": "https://github.com/Dev-Rook/hopewell-high/blob/master/src/Assets/Icons/Cadet-Icon.png?raw=true",
+        "Title": "Airport",
+        "Description": "Montego Bay is serviced by Sangster International Airport. Normal time by car to the airport is half an hour, but allow longer at peak times."
+    },
+    {
+        "id": 14,
+        "Icon": "https://github.com/Dev-Rook/hopewell-high/blob/master/src/Assets/Icons/Cadet-Icon.png?raw=true",
+        "Title": "Security & Police",
+        "Description": "Boats are encouraged to secure items that could easily be removed. The Freeport Police Station is located less than one mile away, at the enterance to the Freeport area."
     }
 ]
