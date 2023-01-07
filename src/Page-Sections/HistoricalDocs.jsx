@@ -18,11 +18,13 @@ const HistoricalDocs = () => {
         {data &&
           data.map((value) => {
             return (
-              <div className={Styles.Card} key={value.id}>
-                <img src={value.Icon} alt="" className={Styles.Icon} />
-                <p className={Styles.Title}>{value.Title}</p>
-                <p className={Styles.Description}>{value.Description}</p>
-              </div>
+              <a href={value.Link} target={"_blank"} rel={"noreferrer"}>
+                <div className={Styles.Card} key={value.id}>
+                  <img src={value.Icon} alt="" className={Styles.Icon} />
+                  <p className={Styles.Title}>{value.Title}</p>
+                  {/* <p className={Styles.Description}>{value.Description}</p> */}
+                </div>
+              </a>
             );
           })}
       </div>
