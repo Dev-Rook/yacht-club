@@ -101,7 +101,7 @@ const Navbar = () => {
           />
           <div className={Styles.Diffuser}></div>
           <img
-            src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assests/Images/Man-Cigar.jpeg?raw=true`}
+            src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Images/Man-Cigar.jpeg?raw=true`}
             alt=""
             className={Styles.Header_Image}
           />
@@ -133,7 +133,7 @@ const Navbar = () => {
           >
             <ListGroup.Item className={Styles.ListGroupItem}>
               <img
-                src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assests/Icons/Anchor.png?raw=true`}
+                src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Icons/Anchor.png?raw=true`}
                 alt=""
                 className={Styles.Navlink_Icon}
               />
@@ -166,7 +166,7 @@ const Navbar = () => {
           <Link onClick={doubleFunction} className={Styles.Navlink} to={"Fishing"}>
             <ListGroup.Item className={Styles.ListGroupItem}>
               <img
-                src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assests/Icons/Fishing.png?raw=true`}
+                src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Icons/Fishing.png?raw=true`}
                 alt=""
                 className={Styles.Navlink_Icon}
               />
@@ -177,7 +177,7 @@ const Navbar = () => {
           <Link onClick={doubleFunction} className={Styles.Navlink} to={"Membership"}>
             <ListGroup.Item className={Styles.ListGroupItem}>
               <img
-                src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assests/Icons/Membership.png?raw=true`}
+                src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Icons/Membership.png?raw=true`}
                 alt=""
                 className={Styles.Navlink_Icon}
               />
@@ -188,7 +188,7 @@ const Navbar = () => {
           <Link onClick={doubleFunction} className={Styles.Navlink} to={"Updates"}>
             <ListGroup.Item className={Styles.ListGroupItem}>
               <img
-                src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assests/Icons/Updates.png?raw=true`}
+                src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Icons/Updates.png?raw=true`}
                 alt=""
                 className={Styles.Navlink_Icon}
               />
@@ -203,7 +203,7 @@ const Navbar = () => {
           >
             <ListGroup.Item className={Styles.ListGroupItem}>
             <img
-                src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assests/Icons/Call.png?raw=true`}
+                src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Icons/Call.png?raw=true`}
                 alt=""
                 className={Styles.Navlink_Icon}
               />
