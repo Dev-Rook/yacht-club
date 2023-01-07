@@ -1,8 +1,14 @@
 import React from "react";
-import { Link } from "react-router-dom";
+import useAxios from "../Hooks/useAxios";
 import Styles from "../Styles/Page-Section-Styles/Weather.module.scss";
 
+// const dotenv = require("dotenv").config();
+
 const Weather = () => {
+  // const API_KEY = process.env.REACT_APP_MB_WEATHER_API_KEY;
+  // console.log(API_KEY);
+  const url = `https://api.openweathermap.org/data/2.5/weather?q=montego%20bay&appid=88187a4680485cc3729b4f335314aec2`;
+  const { data, loading, error } = useAxios(url);
 
   return (
     <div className={Styles.Section}>
@@ -15,13 +21,22 @@ const Weather = () => {
           molestiae.
         </p>
       </div>
-      {/* <iframe
-        className={Styles.Weather_Iframe}
-        src={`https://widgets.sailflow.com/widgets/web/windMap?w=600&h=450&c=0A2946&rp=18&m_m=t&csn=MBJ&search=44.38959,-68.20694&sn=RainWise&sid=100661&u_t=F&act=Sail&m_c=18.47,-77.93&m_z=12&app=sailflow`}
-        width={"100%"}
-        height={"100%"}
-        frameborder="none"
-      ></iframe> */}
+
+      <div className={Styles.Weather_Container}>
+        <p className={Styles.Temperature}>60°c</p>
+
+        <div className={Styles.Wind_Info_Container}>
+          <div className={Styles.Wind_Item}>
+            <img src={``} alt="" className={Styles.Weather_Icon} />
+            <p className={Styles.Wind_Info}>{data?.wind?.speed} Knots</p>
+          </div>
+
+          <div className={Styles.Wind_Item}>
+            <img src={``} alt="" className={Styles.Weather_Icon} />
+            <p className={Styles.Wind_Info}>{data?.wind?.deg} Degrees</p>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };
