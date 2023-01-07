@@ -23,7 +23,7 @@ const useAxios = (url) => {
     getApiData();
   }, [getApiData]);
 
-  return { data, loading, error };
+  return { data, loading, error, getApiData };
 };
 
 export default useAxios;
