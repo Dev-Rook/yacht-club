@@ -32,7 +32,7 @@ const Weather = () => {
         <div className={Styles.Wind_Info_Container}>
           <div className={Styles.Wind_Item}>
             <img
-              src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assests/Icons/Wind.png?raw=true`}
+              src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Icons/Wind.png?raw=true`}
               alt="Wind Icon"
               className={Styles.Weather_Icon}
             />
@@ -42,7 +42,7 @@ const Weather = () => {
 
           <div className={Styles.Wind_Item}>
             <img
-              src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assests/Icons/Compass.png?raw=true`}
+              src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Icons/Compass.png?raw=true`}
               alt="Compass Icon"
               className={Styles.Weather_Icon}
             />

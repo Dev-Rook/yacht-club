@@ -10,7 +10,6 @@ const About = () => {
   TabTitle("MBYC | About");
   return (
     <div className={Styles.Page}>
-      {/* <PageHead /> */}
       <div className={Styles.PageHead}>
         <div className={Styles.Page_Title}>About</div>
         <div className={Styles.Diffuser}></div>
