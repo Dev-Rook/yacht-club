@@ -1,4 +1,5 @@
 .Section {
+  border: 1px solid white;
   display: flex;
   flex-direction: column;
 
@@ -13,7 +14,7 @@
   overflow: hidden;
 
   height: 100vh;
-  width: 100%;
+  width: 100vw;
 
   .Content_Container {
     display: flex;

@@ -10,6 +10,7 @@ import Offer from "../Page-Sections/Offer";
 import Tour from "../Page-Sections/Tour";
 import BecomeAMember from "../Page-Sections/BecomeAMember";
 import Updates from "../Page-Sections/Updates";
+import Weather from "../Page-Sections/Weather";
 import Staff from "../Page-Sections/Staff";
 // Page Section Import End
 
@@ -24,6 +25,7 @@ const Landing = () => {
       <Tour />
       <BecomeAMember />
       <Updates />
+      <Weather />
       <Staff />
     </div>
   );
