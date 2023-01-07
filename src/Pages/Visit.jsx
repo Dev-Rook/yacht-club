@@ -12,7 +12,7 @@ const Visit = () => {
         <div className={Styles.Page_Title}>Visit</div>
         <div className={Styles.Diffuser}></div>
         <img
-          src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assests/Images/Page%20Header%20Images/Nautical-Chart.jpg?raw=true`}
+          src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assests/Images/Page%20Header%20Images/Nautical-Chart-2.jpg?raw=true`}
           alt=""
           className={Styles.Header_Image}
         />

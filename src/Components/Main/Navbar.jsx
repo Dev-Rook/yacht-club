@@ -128,7 +128,7 @@ const Navbar = () => {
           <Link
             onClick={doubleFunction}
             className={Styles.Navlink}
-            to={"Curriculums"}
+            to={"Visit"}
           >
             <ListGroup.Item className={Styles.ListGroupItem}>
               <img
@@ -143,7 +143,7 @@ const Navbar = () => {
           <Link
             onClick={doubleFunction}
             className={Styles.Navlink}
-            to={"Curriculums"}
+            to={"Club"}
           >
             <ListGroup.Item className={Styles.ListGroupItem}>
               <Groups2Icon sx={{ color: "White", fontSize: 25 }} />
@@ -154,7 +154,7 @@ const Navbar = () => {
           <Link
             onClick={doubleFunction}
             className={Styles.Navlink}
-            to={"Documents"}
+            to={"Sailing"}
           >
             <ListGroup.Item className={Styles.ListGroupItem}>
               <SailingIcon sx={{ color: "White", fontSize: 25 }} />
@@ -162,7 +162,7 @@ const Navbar = () => {
             </ListGroup.Item>
           </Link>
 
-          <Link onClick={doubleFunction} className={Styles.Navlink} to={"News"}>
+          <Link onClick={doubleFunction} className={Styles.Navlink} to={"Fishing"}>
             <ListGroup.Item className={Styles.ListGroupItem}>
               <img
                 src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assests/Icons/Fishing.png?raw=true`}
@@ -173,7 +173,7 @@ const Navbar = () => {
             </ListGroup.Item>
           </Link>
 
-          <Link onClick={doubleFunction} className={Styles.Navlink} to={"News"}>
+          <Link onClick={doubleFunction} className={Styles.Navlink} to={"Membership"}>
             <ListGroup.Item className={Styles.ListGroupItem}>
               <img
                 src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assests/Icons/Membership.png?raw=true`}
@@ -184,7 +184,7 @@ const Navbar = () => {
             </ListGroup.Item>
           </Link>
 
-          <Link onClick={doubleFunction} className={Styles.Navlink} to={"News"}>
+          <Link onClick={doubleFunction} className={Styles.Navlink} to={"Updates"}>
             <ListGroup.Item className={Styles.ListGroupItem}>
               <img
                 src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assests/Icons/Updates.png?raw=true`}
