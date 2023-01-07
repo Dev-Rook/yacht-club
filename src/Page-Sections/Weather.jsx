@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import Styles from "../Styles/Page-Section-Styles/Weather.module.scss";
 
 const Weather = () => {
-    
+
   return (
     <div className={Styles.Section}>
       <div className={Styles.Content_Container}>
