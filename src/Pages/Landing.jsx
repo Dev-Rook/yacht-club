@@ -7,6 +7,7 @@ import Hero from "../Page-Sections/Hero";
 import Introduction from "../Page-Sections/Introduction";
 import Offer from "../Page-Sections/Offer"
 import Tour from "../Page-Sections/Tour"
+import BecomeAMember from "../Page-Sections/BecomeAMember";
 import Updates from "../Page-Sections/Updates";
 import Staff from "../Page-Sections/Staff";
 // Page Section Import End
@@ -19,6 +20,7 @@ const Landing = () => {
       <Introduction />
       <Offer />
       <Tour />
+      <BecomeAMember />
       <Updates />
       <Staff />
     </div>
