@@ -11,49 +11,6 @@
   height: fit-content;
   width: 100%;
 
-  .PageHead {
-    display: flex;
-    position: relative;
-
-    height: 500px;
-    width: 100%;
-
-    justify-content: center;
-    align-items: center;
-
-    .Page_Title {
-      font-size: 50px;
-      font-style: bold;
-      font-weight: 400;
-      z-index: 3;
-
-      // position: absolute;
-      // bottom: 20px;
-      // left: 20px;
-    }
-
-    .Diffuser {
-      z-index: 2;
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      height: 100%;
-      width: 100%;
-
-      background-color: rgba(0, 0, 0, 0.4);
-    }
-
-    .Header_Image {
-      z-index: 1;
-      position: absolute;
-      top: 0px;
-      left: 0px;
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-    }
-  }
-
   .Section {
     display: flex;
     flex-direction: column;
@@ -108,6 +65,7 @@
         }
       }
     }
+
     .About_Container {
       display: flex;
       flex-direction: column;
@@ -165,73 +123,82 @@
 
 // Media Queries Start
 @media only screen and (max-width: 1555px) {
-  .Section {
-    .Content_Container {
-      .About_Container {
-        .Brand {
-          font-size: 40px;
-        }
-        br {
-          display: none;
+  .Page {
+    .Section {
+      .Content_Container {
+        .About_Container {
+          .Brand {
+            font-size: 40px;
+          }
+          br {
+            display: none;
+          }
         }
       }
     }
   }
 }
 @media only screen and (max-width: 1030px) {
-  .Section {
-    .Content_Container {
-      .About_Container {
-        .Brand {
-          font-size: 40px;
-        }
-        .Description {
-          font-size: 18px;
+  .Page {
+    .Section {
+      .Content_Container {
+        .About_Container {
+          .Brand {
+            font-size: 40px;
+          }
+          .Description {
+            font-size: 18px;
+          }
         }
       }
     }
   }
 }
 @media only screen and (max-width: 996px) {
-  .Section {
-    height: fit-content;
-    .Content_Container {
-      .Image_Container {
-        height: 300px;
-        width: 300px;
-      }
-      .About_Container {
-        width: 100%;
-        align-items: center;
-        .Brand {
-          font-size: 30px;
-          text-align: center;
+  .Page {
+    .Section {
+      height: fit-content;
+      .Content_Container {
+        .Image_Container {
+          height: 300px;
+          width: 300px;
         }
-        .Description {
-          font-size: 15px;
-          text-align: center;
+        .About_Container {
+          width: 100%;
+          align-items: center;
+          .Brand {
+            font-size: 30px;
+            text-align: center;
+          }
+          .Description {
+            font-size: 15px;
+            text-align: center;
+          }
         }
       }
     }
   }
 }
 @media only screen and (max-width: 360px) {
-  .Section {
-    .Content_Container {
-      \ .Image_Container {
-        height: 250px;
-        width: 250px;
-      }
-
-      .About_Container {
-        .Question {
-          font-size: 12px;
+  .Page {
+    .Section {
+      .Content_Container {
+        \ .Image_Container {
+          height: 250px;
+          width: 250px;
         }
-        .Brand {
-          font-size: 25px;
+
+        .About_Container {
+          .Question {
+            font-size: 12px;
+          }
+          .Brand {
+            font-size: 25px;
+          }
         }
       }
     }
   }
 }
 // Media Queries End
+
