@@ -9,22 +9,21 @@ const Updates = () => {
   const [data, setData] = useState(UpdatesData);
   return (
     <div className={Styles.Page}>
-      <div className={Styles.Section}>
+<div className={Styles.Section}>
         <div className={Styles.Content_Container}>
           <div className={Styles.About_Container}>
             <p className={Styles.Question}></p>
-            <p className={Styles.Brand}>Visitor Information</p>
+            <p className={Styles.Brand}>Updates</p>
             <p className={Styles.Description}>
-              The Montego Bay Yacht Club is located on the Freeport Peninsula
-              with berthing in the protected basin that forms the Montego Bay
-              Harbour. General office opening hours are from: 9:00 am to 6:00
-              pm.
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
+              consectetur? Voluptates placeat nesciunt rem doloribus quae eos
+              libero eveniet et.
             </p>
           </div>
           <div className={Styles.Image_Container}>
             <img
               src={
-                "https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Images/SuperTramp.jpeg?raw=true"
+                "https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Images/Fishing-Reel.jpeg?raw=true"
               }
               alt=""
               className={Styles.Image}
@@ -33,7 +32,7 @@ const Updates = () => {
         </div>
       </div>
 
-      <div className={Styles.Section}>
+      <div className={Styles.Card_Section}>
         <div className={Styles.Content_Container}>
           {data &&
             data.map((value) => {

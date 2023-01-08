@@ -14,6 +14,8 @@ const About = lazy(() => import("./Pages/About"));
 const Visit = lazy(() => import("./Pages/Visit"));
 const Updates = lazy(() => import("./Pages/Updates"));
 const Sailing = lazy(() => import("./Pages/Sailing"));
+const Fishing = lazy(() => import("./Pages/Fishing"));
+const Membership = lazy(() => import("./Pages/Membership"));
 // Page Import End
 
 function App() {
@@ -47,6 +49,8 @@ function App() {
             <Route path={"Visit"} element={<Visit />} />
             <Route path={"Updates"} element={<Updates />} />
             <Route path={"Sailing"} element={<Sailing />} />
+            <Route path={"Fishing"} element={<Fishing />} />
+            <Route path={"Membership"} element={<Membership />} />
           </Routes>
         </Suspense>
         <Footer />

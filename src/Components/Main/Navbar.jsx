@@ -140,18 +140,7 @@ const Navbar = () => {
               Visit
             </ListGroup.Item>
           </Link>
-
-          <Link
-            onClick={doubleFunction}
-            className={Styles.Navlink}
-            to={"Club"}
-          >
-            <ListGroup.Item className={Styles.ListGroupItem}>
-              <Groups2Icon sx={{ color: "White", fontSize: 25 }} />
-              Club
-            </ListGroup.Item>
-          </Link>
-
+          
           <Link
             onClick={doubleFunction}
             className={Styles.Navlink}
