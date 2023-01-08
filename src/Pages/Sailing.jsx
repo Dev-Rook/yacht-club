@@ -17,8 +17,7 @@ const Sailing = () => {
             <p className={Styles.Description}>
               The Montego Bay Yacht Club maintains an active calendar of
               sailing, both racing and cruising, as well as sailing training
-              programs for all. Please click on one of the links below for more
-              details..
+              programs for all. 
             </p>
           </div>
           <div className={Styles.Image_Container}>
