@@ -16,7 +16,7 @@ const Introduction = () => {
             libero eveniet et.
           </p>
 
-          <Link to={"AboutPage"}>
+          <Link to={"About"}>
             <button className={Styles.Read_More_Button}>Read More</button>
           </Link>
         </div>
