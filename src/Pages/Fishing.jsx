@@ -29,8 +29,13 @@ const Fishing = () => {
         </div>
       </div>
 
-
-      <img src={``} alt="" className={Styles.Fishing_Poster} />
+      <div className={Styles.Poster_Container}>
+        <img
+          src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Images/Fishing-Poster.jpg?raw=true`}
+          alt=""
+          className={Styles.Fishing_Poster}
+        />
+      </div>
     </div>
   );
 };
