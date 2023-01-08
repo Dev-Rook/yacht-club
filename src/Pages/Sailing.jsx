@@ -32,6 +32,14 @@ const Sailing = () => {
         </div>
       </div>
 
+      <div className={Styles.Poster_Container}>
+        <img
+          src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Images/J22%20Skedule.jpg?raw=true`}
+          alt=""
+          className={Styles.Fishing_Poster}
+        />
+      </div>
+
       <J22Sailing />
       <PinappleCup />
     </div>
