@@ -28,6 +28,9 @@ const Fishing = () => {
           </div>
         </div>
       </div>
+
+
+      <img src={``} alt="" className={Styles.Fishing_Poster} />
     </div>
   );
 };
