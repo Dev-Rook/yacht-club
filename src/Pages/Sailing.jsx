@@ -2,6 +2,9 @@ import React, { useState } from "react";
 import { TabTitle } from "../Utilities/TabTitle";
 import Styles from "../Styles/Page-Styles/Sailing.module.scss";
 
+import J22Sailing from "../Page-Sections/J22Sailing";
+import PinappleCup from "../Page-Sections/PinappleCup";
+
 const Sailing = () => {
   TabTitle("MBYC | Sailing");
   return (
@@ -12,9 +15,10 @@ const Sailing = () => {
             <p className={Styles.Question}></p>
             <p className={Styles.Brand}>Sailing</p>
             <p className={Styles.Description}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
-              consectetur? Voluptates placeat nesciunt rem doloribus quae eos
-              libero eveniet et.
+              The Montego Bay Yacht Club maintains an active calendar of
+              sailing, both racing and cruising, as well as sailing training
+              programs for all. Please click on one of the links below for more
+              details..
             </p>
           </div>
           <div className={Styles.Image_Container}>
@@ -28,6 +32,9 @@ const Sailing = () => {
           </div>
         </div>
       </div>
+
+      <J22Sailing />
+      <PinappleCup />
     </div>
   );
 };

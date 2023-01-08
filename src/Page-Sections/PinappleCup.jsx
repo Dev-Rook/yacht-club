@@ -3,7 +3,7 @@ import Styles from "../Styles/Page-Section-Styles/SailingSections.module.scss";
 
 import J22Data from "../Assets/Data/J22.json";
 
-const J22Sailing = () => {
+const PinappleCup = () => {
   const [data, setData] = useState(J22Data);
   return (
     <div className={Styles.Section}>
@@ -11,7 +11,7 @@ const J22Sailing = () => {
         <img src={``} alt="" className={Styles.Section_Image} />
       </div>
 
-      <p className={Styles.Section_Title}>J22 Sailing</p>
+      <p className={Styles.Section_Title}>Pinepple Cup</p>
       <p className={Styles.Section_Description}>
         Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quis labore
         tempore temporibus, animi repellendus voluptas ut eos beatae voluptates.
@@ -33,4 +33,4 @@ const J22Sailing = () => {
   );
 };
 
-export default J22Sailing;
+export default PinappleCup;
