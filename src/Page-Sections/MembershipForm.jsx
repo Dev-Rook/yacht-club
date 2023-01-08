@@ -54,7 +54,7 @@ const MembershipForm = () => {
             id=""
             cols="30"
             rows="10"
-            placeholder="Message"
+            placeholder="Inquires?"
             required
             className={`${Styles.Input} ${Styles.Message}`}
           ></textarea>

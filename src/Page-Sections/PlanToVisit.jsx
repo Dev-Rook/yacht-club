@@ -14,8 +14,8 @@ const PlanToVisit = () => {
           molestiae.
         </p>
 
-        <Link to={"Membership"}>
-          <button className={Styles.Contact_Button}>Inquire</button>
+        <Link to={"Visit"}>
+          <button className={Styles.Contact_Button}>Learn More</button>
         </Link>
       </div>
     </div>
