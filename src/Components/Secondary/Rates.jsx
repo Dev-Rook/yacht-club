@@ -11,7 +11,7 @@ const Rates = () => {
         <p className={Styles.Section_Title}>Mono Hull</p>
       </div>
 
-      <Table bordered hover>
+      <Table bordered>
         <thead>
           <tr>
             <th>Days</th>
@@ -38,7 +38,7 @@ const Rates = () => {
         <p className={Styles.Section_Title}>Catamaran</p>
       </div>
 
-      <Table bordered hover>
+      <Table bordered>
         <thead>
           <tr>
             <th>Days</th>
@@ -65,7 +65,7 @@ const Rates = () => {
         <p className={Styles.Section_Title}>Anchorage</p>
       </div>
 
-      <Table bordered hover>
+      <Table bordered>
         <thead>
           <tr>
             <th>Days</th>
