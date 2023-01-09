@@ -58,7 +58,7 @@ function App() {
 
       <NavigationIcon
         onClick={scrollUp}
-        sx={{ fontSize: 30 }}
+        sx={{ fontSize: 30, color: "white" }}
         className={`${Styles.Back_To_Top_Icon} ${
           backToTop ? Styles.Show_Back_To_Top : ""
         }`}
