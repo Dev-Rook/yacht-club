@@ -93,20 +93,6 @@ const Navbar = () => {
 
       {/* Mobile Menu Start  */}
       <div className={`${Styles.Mobile_Menu} ${menu ? Styles.Reveal : ""}`}>
-        <div className={Styles.Mobile_Menu_Header}>
-          <CloseIcon
-            onClick={showMenu}
-            className={Styles.CloseIcon}
-            sx={{ color: "white", fontSize: 40 }}
-          />
-          <div className={Styles.Diffuser}></div>
-          <img
-            src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Images/Man-Cigar.jpeg?raw=true`}
-            alt=""
-            className={Styles.Header_Image}
-          />
-        </div>
-
         <ListGroup className={Styles.ListGroup}>
           <Link onClick={doubleFunction} className={Styles.Navlink} to={"/"}>
             <ListGroup.Item className={Styles.ListGroupItem}>
@@ -200,48 +186,6 @@ const Navbar = () => {
             </ListGroup.Item>
           </Link>
         </ListGroup>
-
-        <div className={Styles.Social_Icon_Bar}>
-          <div className={Styles.Social_Container}>
-            <a href={`#`} target={"_blank"} rel={"noreferrer"}>
-              <InstagramIcon
-                className={Styles.SocialIcon}
-                sx={{ color: "White", fontSize: 20 }}
-              />
-              <p className={Styles.Social_Title}>Instagram</p>
-            </a>
-          </div>
-
-          <div className={Styles.Social_Container}>
-            <a href={`#`} target={"_blank"} rel={"noreferrer"}>
-              <FacebookIcon
-                className={Styles.SocialIcon}
-                sx={{ color: "White", fontSize: 20 }}
-              />
-              <p className={Styles.Social_Title}>FaceBook</p>
-            </a>
-          </div>
-
-          <div className={Styles.Social_Container}>
-            <a href={`#`} target={"_blank"} rel={"noreferrer"}>
-              <TwitterIcon
-                className={Styles.SocialIcon}
-                sx={{ color: "White", fontSize: 20 }}
-              />
-              <p className={Styles.Social_Title}>Twitter</p>
-            </a>
-          </div>
-
-          <div className={Styles.Social_Container}>
-            <a href={`#`} target={"_blank"} rel={"noreferrer"}>
-              <WhatsAppIcon
-                className={Styles.SocialIcon}
-                sx={{ color: "White", fontSize: 20 }}
-              />
-              <p className={Styles.Social_Title}>WhatsApp</p>
-            </a>
-          </div>
-        </div>
       </div>
       {/* Mobile Menu End */}
     </nav>
