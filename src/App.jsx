@@ -12,7 +12,7 @@ import Fallback from "./Pages/Fallback";
 const Landing = lazy(() => import("./Pages/Landing"));
 const About = lazy(() => import("./Pages/About"));
 const Visit = lazy(() => import("./Pages/Visit"));
-const Updates = lazy(() => import("./Pages/Updates"));
+const Articles = lazy(() => import("./Pages/Articles"));
 const Sailing = lazy(() => import("./Pages/Sailing"));
 const Fishing = lazy(() => import("./Pages/Fishing"));
 const Membership = lazy(() => import("./Pages/Membership"));
@@ -47,7 +47,7 @@ function App() {
             <Route path={"/"} element={<Landing />} />
             <Route path={"About"} element={<About />} />
             <Route path={"Visit"} element={<Visit />} />
-            <Route path={"Updates"} element={<Updates />} />
+            <Route path={"Articles"} element={<Articles />} />
             <Route path={"Sailing"} element={<Sailing />} />
             <Route path={"Fishing"} element={<Fishing />} />
             <Route path={"Membership"} element={<Membership />} />

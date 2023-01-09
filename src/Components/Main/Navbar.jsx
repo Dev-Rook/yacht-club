@@ -160,14 +160,14 @@ const Navbar = () => {
             </ListGroup.Item>
           </Link>
 
-          <Link onClick={doubleFunction} className={Styles.Navlink} to={"Updates"}>
+          <Link onClick={doubleFunction} className={Styles.Navlink} to={"Articles"}>
             <ListGroup.Item className={Styles.ListGroupItem}>
               <img
                 src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Icons/Updates.png?raw=true`}
                 alt=""
                 className={Styles.Navlink_Icon}
               />
-              Updates
+              Articles
             </ListGroup.Item>
           </Link>
 
