@@ -2,149 +2,124 @@
   display: flex;
   flex-direction: column;
 
-  position: relative;
-
   justify-content: center;
-  align-items: left;
+  align-items: center;
 
-  gap: 20px;
-
-  padding: 5px;
-  padding-top: 80px;
-  padding-bottom: 80px;
-  overflow: hidden;
-
-  height: fit-content;
+  height: 100vh;
   width: 100%;
+  color: white;
 
-  .Section_Title_Container {
+  .Content_Container {
     display: flex;
     flex-direction: column;
 
-    padding: 0px;
-    gap: 10px;
+    padding: 5px;
+    gap: 30px;
 
     justify-content: center;
     align-items: center;
 
     height: fit-content;
-    width: 100%;
-    .Question {
-      font-size: 18px;
-      font-weight: 100;
-      font-style: bold;
-      transition: 0.3s;
-    }
+    width: 800px;
 
-    .Section_Title {
+    transition: 0.5s;
+
+    .Title {
       font-size: 50px;
-      font-weight: 100;
-      font-style: bold;
-      transition: 0.3s;
+      font-weight: 200;
+      text-align: center;
+      transition: 0.5s;
     }
-  }
 
-  .Content_Container {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    grid-gap: 20px;
+    .Description {
+      font-size: 18px;
+      font-weight: 200;
+      text-align: center;
+      transition: 0.5s;
+    }
 
-    justify-content: space-around;
-    align-items: center;
-
-    height: 100%;
-    width: 100%;
-
-    .Blog_Card {
+    .Social_Icon_Bar {
       display: flex;
-      flex-direction: column;
 
-      padding: 0px;
-      gap: 0px;
+      padding: 5px;
+      gap: 30px;
+
+      justify-content: space-evenly;
+      align-items: center;
 
       height: fit-content;
-      width: 100%;
+      width: 300px;
 
-      .Image_Container {
-        height: 300px;
-        width: 100%;
-
-        display: flex;
-
-        position: relative;
-
-        .Category {
-          background-color: rgba(0, 0, 0, 0.5);
-          padding: 5px 20px;
-
-          display: flex;
-
-          justify-content: center;
-          align-items: center;
-
-          position: absolute;
-          bottom: 10px;
-          left: 10px;
-
-          font-size: 18px;
-          font-weight: 300;
-        }
-
-        .Image {
-          height: 100%;
-          width: 100%;
-          object-fit: cover;
-        }
-      }
-
-      .Information_Box {
+      .Social_Container {
         display: flex;
         flex-direction: column;
 
-        padding: 5px;
-        gap: 10px;
+        justify-content: center;
+        align-items: center;
 
-        height: fit-content;
-        width: 100%;
+        .SocialIcon {
+          display: flex;
+          margin: auto;
+        }
+
+        .Social_Title {
+          font-size: 15px;
+          display: none;
+        }
       }
     }
-  }
 
-  .View_More_Button {
-    padding: 5px 20px;
-    display: flex;
-    cursor: pointer;
-    justify-content: center;
-    align-items: center;
-    background-color: rgba(0, 0, 0, 0.5);
+    .Contact_Button {
+      border: 2px solid white;
+      color: white;
+      background-color: rgba(0, 0, 0, 0.3);
+      padding: 5px 20px;
 
-    height: fit-content;
-    width: fit-content;
+      display: flex;
+      cursor: pointer;
 
-    margin: auto;
-    margin-top: 20px;
+      justify-content: center;
+      align-items: center;
 
-    font-size: 18px;
+      height: fit-content;
+      width: fit-content;
+
+      transition: 0.3s;
+    }
   }
 }
 
 // Media Queries Start
-@media only screen and (max-width: 996px) {
+
+@media only screen and (max-width: 810px) {
   .Section {
-    .Section_Title_Container {
-      .Section_Title {
-        font-size: 30px;
+    .Content_Container {
+      width: 100%;
+    }
+  }
+}
+
+@media only screen and (max-width: 550px) {
+  .Section {
+    .Content_Container {
+      .Title {
+        font-size: 35px;
+      }
+      .Description {
+        font-size: 15px;
       }
     }
   }
 }
-@media only screen and (max-width: 360px) {
+
+@media only screen and (max-width: 320px) {
   .Section {
-    .Section_Title_Container {
-      .Section_Title {
-        font-size: 25px;
+    .Content_Container {
+      .Description {
+        font-size: 13px;
       }
     }
   }
 }
+
 // Media Queries End

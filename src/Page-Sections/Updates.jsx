@@ -3,39 +3,57 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Styles from "../Styles/Page-Section-Styles/Updates.module.scss";
 
-import UpdatesData from "../Assets/Data/Updates.json"
+import InstagramIcon from "@mui/icons-material/Instagram";
+import FacebookIcon from "@mui/icons-material/Facebook";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import WhatsAppIcon from "@mui/icons-material/WhatsApp";
+
 
 const Updates = () => {
-  const [data, setData] = useState(UpdatesData);
-
   return (
     <div className={Styles.Section}>
-      <div className={Styles.Section_Title_Container}>
-        <p className={Styles.Question}>Updates</p>
-        <p className={Styles.Section_Title}>Latest Club Updates</p>
-      </div>
       <div className={Styles.Content_Container}>
-        {data &&
-          data.slice(0, 3).map((value) => {
-            return (
-              <div className={Styles.Blog_Card} key={value.id}>
-                <div className={Styles.Image_Container}>
-                  <p className={Styles.Category}>{value.Category}</p>
-                  <img src={value.Image} alt="" className={Styles.Image} />
-                </div>
-                <div className={Styles.Information_Box}>
-                  <p className={Styles.Tite}>{value.Title}</p>
-                  <p className={Styles.Date}>{value.Date}</p>
-                  <p className={Styles.Description}>{value.Description}</p>
-                </div>
-              </div>
-            );
-          })}
-      </div>
+        <h1 className={Styles.Title}>Club Updates</h1>
 
-      <Link className={Styles.Link} to={"Articles"}>
-        <button className={Styles.View_More_Button}>View All</button>
-      </Link>
+        <p className={Styles.Description}>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Autem nobis
+          dignissimos sunt aut corporis dolor ab harum atque molestias
+          molestiae.
+        </p>
+
+        <div className={Styles.Social_Icon_Bar}>
+          <div className={Styles.Social_Container}>
+            <a href={`#`} target={"_blank"} rel={"noreferrer"}>
+              <InstagramIcon
+                className={Styles.SocialIcon}
+                sx={{ color: "purple", fontSize: 25 }}
+              />
+              <p className={Styles.Social_Title}>Instagram</p>
+            </a>
+          </div>
+
+          <div className={Styles.Social_Container}>
+            <a href={`#`} target={"_blank"} rel={"noreferrer"}>
+              <FacebookIcon
+                className={Styles.SocialIcon}
+                sx={{ color: "lightBlue", fontSize: 25 }}
+              />
+              <p className={Styles.Social_Title}>FaceBook</p>
+            </a>
+          </div>
+
+          <div className={Styles.Social_Container}>
+            <a href={`#`} target={"_blank"} rel={"noreferrer"}>
+              <TwitterIcon
+                className={Styles.SocialIcon}
+                sx={{ color: "blue", fontSize: 25 }}
+              />
+              <p className={Styles.Social_Title}>Twitter</p>
+            </a>
+          </div>
+        </div>
+
+      </div>
     </div>
   );
 };

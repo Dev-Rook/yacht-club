@@ -1,6 +1,7 @@
 .Section {
   display: flex;
   flex-direction: column;
+  color: white;
 
   position: relative;
 
@@ -88,9 +89,10 @@
     }
 
     .Read_More_Button {
-      border: 2px solid black;
+      border: 2px solid white;
       background-color: rgba(0, 0, 0, 0.3);
       padding: 5px 20px;
+      color: white;
 
       display: flex;
       cursor: pointer;

@@ -79,7 +79,7 @@ const Navbar = () => {
           className={Styles.HamburgerMenu}
           onToggle={setMenu}
           direction="right"
-          // color="#ffffff"
+          color="#ffffff"
           duration={0.5}
           size={35}
         />

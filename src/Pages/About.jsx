@@ -10,7 +10,11 @@ const About = () => {
   TabTitle("MBYC | About");
   return (
     <div className={Styles.Page}>
-      <div className={Styles.Section}>
+      <div className={Styles.Page_Head}>
+
+      </div>
+
+      {/* <div className={Styles.Section}>
         <div className={Styles.Content_Container}>
           <div className={Styles.About_Container}>
             <p className={Styles.Question}></p>
@@ -31,7 +35,7 @@ const About = () => {
             />
           </div>
         </div>
-      </div>
+      </div> */}
 
       <History />
       <HistoricalDocs />
