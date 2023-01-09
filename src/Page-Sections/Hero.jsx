@@ -1,6 +1,4 @@
-import React, { useState } from "react";
-import { Link } from "react-router-dom";
-import { motion } from "framer-motion";
+import React from "react";
 import Styles from "../Styles/Page-Section-Styles/Hero.module.scss";
 
 const Hero = () => {
