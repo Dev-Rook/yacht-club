@@ -12,10 +12,6 @@ const About = () => {
   return (
     <div className={Styles.Page}>
       <AboutHeader />
-      {/* <div className={Styles.Page_Head}>
-
-      </div> */}
-
       {/* <div className={Styles.Section}>
         <div className={Styles.Content_Container}>
           <div className={Styles.About_Container}>

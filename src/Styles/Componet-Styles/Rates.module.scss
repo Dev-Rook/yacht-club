@@ -1,6 +1,7 @@
 .Section {
   display: flex;
   flex-direction: column;
+  color: white;
 
   padding: 5px;
 
@@ -8,7 +9,7 @@
   align-items: center;
 
   height: 100vh;
-  width: 100%;
+  width: 800px;
 
   .Content_Container {
     display: flex;
@@ -63,9 +64,11 @@
 
 @media only screen and (max-width: 810px) {
   .Section {
+    width: 100%;
     .Content_Container {
       width: 100%;
     }
+
   }
 }
 

@@ -18,7 +18,7 @@ const Landing = () => {
   TabTitle("MBYC | Home");
   return (
     <div className={Styles.Page}>
-      {/* <Hero /> */}
+      <Hero />
       <Introduction />
       <Offer />
       <PlanToVisit />

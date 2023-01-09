@@ -7,12 +7,7 @@ const Hero = () => {
   return (
     <div className={Styles.Section}>
       <div className={Styles.Content_Container}>
-        <p className={Styles.Small_Text}></p>
         <p className={Styles.Large_Text}>Montego Bay Yacht Club</p>
-
-        <button className={Styles.Project_Button}>
-          <Link to={"AboutPage"}>About Us</Link>
-        </button>
       </div>
 
       <div className={Styles.Diffuser}></div>
