@@ -49,9 +49,10 @@
     }
 
     .Staff_Button {
-      border: 2px solid black;
+      border: 2px solid white;
       background-color: rgba(0, 0, 0, 0.3);
       padding: 5px 20px;
+      color: white;
 
       display: flex;
       cursor: pointer;
@@ -64,6 +65,17 @@
 
       transition: 0.3s;
     }
+  }
+
+  .Diffuser {
+    position: absolute;
+    top: 0;
+    left: o;
+
+    height: 100%;
+    width: 100%;
+
+    z-index: 3;
   }
 
   .Slider_Container {

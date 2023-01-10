@@ -14,7 +14,7 @@ const Berthing = () => {
           side using their own anchors. Dock rates are listed below. Boats may
           also anchor in the basin off the Club. There is a daily charge for use
           of the Club facilities. Berthing reservations / special requests on
-          the dock - please contact us.
+          the dock -<Link className={Styles.Link} to={"Contact"}> please contact us</Link>.
         </p>
       </div>
     </div>

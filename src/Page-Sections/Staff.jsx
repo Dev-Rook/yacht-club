@@ -29,6 +29,8 @@ const Staff = () => {
           <button className={Styles.Staff_Button}>View All</button>
         </div>
 
+        <div className={Styles.Diffuser}></div>
+
         <div className={Styles.Slider_Container}>
           <Swiper
             slidesPerView={4}
@@ -36,7 +38,7 @@ const Staff = () => {
             spaceBetween={0}
             modules={[Navigation, FreeMode, Mousewheel, Autoplay]}
             autoplay={{
-              delay: 5000,
+              delay: 1800,
               disableOnInteraction: false,
             }}
             grabCursor={true}

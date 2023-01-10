@@ -1,7 +1,8 @@
 import React, { useState } from "react";
 import { TabTitle } from "../Utilities/TabTitle";
-import Styles from "../Styles/Page-Styles/Sailing.module.scss";
+import Styles from "../Styles/Page-Styles/Membership.module.scss";
 
+import MembershipHeader from "../Components/Carousel/MembershipHeader"
 import Table from "react-bootstrap/Table";
 import MembershipForm from "../Page-Sections/MembershipForm";
 
@@ -9,28 +10,8 @@ const Membership = () => {
   TabTitle("MBYC | Membership");
   return (
     <div className={Styles.Page}>
-      <div className={Styles.Section}>
-        <div className={Styles.Content_Container}>
-          <div className={Styles.About_Container}>
-            <p className={Styles.Question}></p>
-            <p className={Styles.Brand}>Membership</p>
-            <p className={Styles.Description}>
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. Numquam,
-              consectetur? Voluptates placeat nesciunt rem doloribus quae eos
-              libero eveniet et.
-            </p>
-          </div>
-          <div className={Styles.Image_Container}>
-            <img
-              src={
-                "https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Images/Page%20Header%20Images/Defender-Upwind-Border-5.jpg?raw=true"
-              }
-              alt=""
-              className={Styles.Image}
-            />
-          </div>
-        </div>
-      </div>
+      <MembershipHeader />
+
 
       <div className={Styles.Section}>
         <div className={Styles.Section_Title_Container}>
@@ -38,7 +19,7 @@ const Membership = () => {
           <p className={Styles.Section_Title}>Membership Fees</p>
         </div>
 
-        <Table bordered>
+        <Table className={Styles.Table} bordered variant="dark">
           <thead>
             <tr>
               <th>Type</th>
