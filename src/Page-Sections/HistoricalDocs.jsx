@@ -25,8 +25,7 @@ const HistoricalDocs = () => {
                 <div className={Styles.Card}>
                   <img src={value.Icon} alt="" className={Styles.Icon} />
                   <p className={Styles.Title}>{value.Title}</p>
-                  {/* <p className={Styles.Description}>{value.Description}</p> */}
-                </div>
+                   </div>
               </a>
             );
           })}
