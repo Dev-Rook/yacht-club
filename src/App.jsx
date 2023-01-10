@@ -5,12 +5,14 @@ import Styles from "./App.module.scss";
 import NavigationIcon from "@mui/icons-material/Navigation";
 
 import Navbar from "./Components/Main/Navbar";
+import GetInTouch from "./Page-Sections/GetInTouch";
 import Footer from "./Components/Main/Footer";
 import Fallback from "./Pages/Fallback";
 
 // Page Import Start
 const Landing = lazy(() => import("./Pages/Landing"));
 const About = lazy(() => import("./Pages/About"));
+const Contact = lazy(() => import("./Pages/Contact"));
 const Visit = lazy(() => import("./Pages/Visit"));
 const Articles = lazy(() => import("./Pages/Articles"));
 const Sailing = lazy(() => import("./Pages/Sailing"));
@@ -51,8 +53,10 @@ function App() {
             <Route path={"Sailing"} element={<Sailing />} />
             <Route path={"Fishing"} element={<Fishing />} />
             <Route path={"Membership"} element={<Membership />} />
+            <Route path={"Contact"} element={<Contact />} />
           </Routes>
         </Suspense>
+        <GetInTouch />
         <Footer />
       </BrowserRouter>
 

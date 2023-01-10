@@ -1,0 +1,41 @@
+.Page {
+  display: flex;
+  flex-direction: column;
+  color: white;
+
+  padding: 0px;
+  gap: 100px;
+
+  justify-content: center;
+  align-items: center;
+
+  height: fit-content;
+  width: 100%;
+
+  .Page_Head {
+    border: 1px solid white;
+    display: flex;
+    flex-direction: column;
+
+    height: 300px;
+    width: 100%;
+
+    .Diffuser {
+      position: absolute;
+      top: 0;
+      left: 0;
+
+      height: 100%;
+      width: 100%;
+
+      background-color: rgba(0, 0, 0, 0.4);
+    }
+
+    .Header_Image {
+      height: 100%;
+      width: 100%;
+      object-fit: cover;
+      z-index: 1;
+    }
+  }
+}
