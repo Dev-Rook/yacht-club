@@ -4,6 +4,7 @@ import Styles from "../Styles/Page-Styles/Membership.module.scss";
 
 import MembershipHeader from "../Components/Carousel/MembershipHeader"
 import Table from "react-bootstrap/Table";
+import Benifits from "../Page-Sections/Benifits";
 import MembershipForm from "../Page-Sections/MembershipForm";
 
 const Membership = () => {
@@ -51,6 +52,7 @@ const Membership = () => {
         </Table>
       </div>
 
+      <Benifits />
       <MembershipForm />
     </div>
   );
