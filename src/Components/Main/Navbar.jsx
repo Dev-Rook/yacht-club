@@ -73,8 +73,51 @@ const Navbar = () => {
           className={Styles.Logo}
         />
       </div>
+
+      <Breadcrumbs className={Styles.Navlink_Container}>
+        <li className={Styles.Navitem}>
+          <Link to={""} className={Styles.Navlink}>
+            Home
+          </Link>
+        </li>
+        <li className={Styles.Navitem}>
+          <Link to={""} className={Styles.Navlink}>
+            About
+          </Link>
+        </li>
+        <li className={Styles.Navitem}>
+          <Link to={""} className={Styles.Navlink}>
+            Visit
+          </Link>
+        </li>
+        <li className={Styles.Navitem}>
+          <Link to={""} className={Styles.Navlink}>
+            Sailing
+          </Link>
+        </li>
+        <li className={Styles.Navitem}>
+          <Link to={""} className={Styles.Navlink}>
+            Fishing
+          </Link>
+        </li>
+        <li className={Styles.Navitem}>
+          <Link to={""} className={Styles.Navlink}>
+            Membership
+          </Link>
+        </li>
+        <li className={Styles.Navitem}>
+          <Link to={""} className={Styles.Navlink}>
+            Atricles
+          </Link>
+        </li>
+        <li className={Styles.Navitem}>
+          <Link to={""} className={Styles.Navlink}>
+            Contact
+          </Link>
+        </li>
+      </Breadcrumbs>
+
       <span className={Styles.Span}>
-        
         <Hamburger
           className={Styles.HamburgerMenu}
           onToggle={setMenu}
@@ -84,12 +127,6 @@ const Navbar = () => {
           size={35}
         />
       </span>
-
-      {/* <MenuIcon
-        onClick={showMenu}
-        className={Styles.MenuIcon}
-        sx={{ color: "black", fontSize: 40 }}
-      /> */}
 
       {/* Mobile Menu Start  */}
       <div className={`${Styles.Mobile_Menu} ${menu ? Styles.Reveal : ""}`}>
@@ -126,7 +163,7 @@ const Navbar = () => {
               Visit
             </ListGroup.Item>
           </Link>
-          
+
           <Link
             onClick={doubleFunction}
             className={Styles.Navlink}
@@ -138,7 +175,11 @@ const Navbar = () => {
             </ListGroup.Item>
           </Link>
 
-          <Link onClick={doubleFunction} className={Styles.Navlink} to={"Fishing"}>
+          <Link
+            onClick={doubleFunction}
+            className={Styles.Navlink}
+            to={"Fishing"}
+          >
             <ListGroup.Item className={Styles.ListGroupItem}>
               <img
                 src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Icons/Fishing.png?raw=true`}
@@ -149,7 +190,11 @@ const Navbar = () => {
             </ListGroup.Item>
           </Link>
 
-          <Link onClick={doubleFunction} className={Styles.Navlink} to={"Membership"}>
+          <Link
+            onClick={doubleFunction}
+            className={Styles.Navlink}
+            to={"Membership"}
+          >
             <ListGroup.Item className={Styles.ListGroupItem}>
               <img
                 src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Icons/Membership.png?raw=true`}
@@ -160,7 +205,11 @@ const Navbar = () => {
             </ListGroup.Item>
           </Link>
 
-          <Link onClick={doubleFunction} className={Styles.Navlink} to={"Articles"}>
+          <Link
+            onClick={doubleFunction}
+            className={Styles.Navlink}
+            to={"Articles"}
+          >
             <ListGroup.Item className={Styles.ListGroupItem}>
               <img
                 src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Icons/Updates.png?raw=true`}
@@ -177,7 +226,7 @@ const Navbar = () => {
             to={"Contact"}
           >
             <ListGroup.Item className={Styles.ListGroupItem}>
-            <img
+              <img
                 src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Icons/Call.png?raw=true`}
                 alt=""
                 className={Styles.Navlink_Icon}
