@@ -3,7 +3,7 @@ import { TabTitle } from "../Utilities/TabTitle";
 import { Link } from "react-router-dom";
 import Styles from "../Styles/Page-Styles/Visit.module.scss";
 
-import VisitHeader from "../Components/Carousel/VisitHeader";
+import VisitHeader from "../Components/Headers/VisitHeader";
 
 import UsefulInfo from "../Page-Sections/UsefulInfo";
 import Arrival from "../Page-Sections/Arrival";

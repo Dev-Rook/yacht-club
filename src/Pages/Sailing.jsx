@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { TabTitle } from "../Utilities/TabTitle";
 import Styles from "../Styles/Page-Styles/Sailing.module.scss";
 
-import SailingHeader from "../Components/Carousel/SailingHeader";
+import SailingHeader from "../Components/Headers/SailingHeader";
 
 import J22Sailing from "../Page-Sections/J22Sailing";
 import PinappleCup from "../Page-Sections/PinappleCup";

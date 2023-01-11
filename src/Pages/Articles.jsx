@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { TabTitle } from "../Utilities/TabTitle";
 import Styles from "../Styles/Page-Styles/Updates.module.scss";
 
-import ArticlesHeader from "../Components/Carousel/ArticlesHeader"
+import ArticlesHeader from "../Components/Headers/ArticlesHeader"
 import UpdatesData from "../Assets/Data/Updates.json";
 
 const Updates = () => {

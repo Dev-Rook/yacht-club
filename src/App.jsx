@@ -46,7 +46,7 @@ function App() {
         <Navbar scroll={scrollUp} />
         <Suspense fallback={<Fallback />}>
           <Routes>
-            <Route path={"/"} element={<Landing />} />
+            <Route path={"/"} element={<Landing scroll={scrollUp} />} />
             <Route path={"About"} element={<About />} />
             <Route path={"Visit"} element={<Visit />} />
             <Route path={"Articles"} element={<Articles />} />

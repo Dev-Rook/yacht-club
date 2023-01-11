@@ -3,7 +3,7 @@ import { TabTitle } from "../Utilities/TabTitle";
 import { Link } from "react-router-dom";
 import Styles from "../Styles/Page-Styles/About.module.scss";
 
-import AboutHeader from "../Components/Carousel/AboutHeader";
+import AboutHeader from "../Components/Headers/AboutHeader";
 import History from "../Page-Sections/History";
 import HistoricalDocs from "../Page-Sections/HistoricalDocs";
 

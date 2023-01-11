@@ -2,7 +2,7 @@ import React, { useState } from "react";
 import { TabTitle } from "../Utilities/TabTitle";
 import Styles from "../Styles/Page-Styles/Fishing.module.scss";
 
-import FishingHeader from "../Components/Carousel/FishingHeader"
+import FishingHeader from "../Components/Headers/FishingHeader"
 
 const Fishing = () => {
   TabTitle("MBYC | Fishing");

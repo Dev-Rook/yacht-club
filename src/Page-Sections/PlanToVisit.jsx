@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Styles from "../Styles/Page-Section-Styles/PlanToVist.module.scss";
 
-const PlanToVisit = () => {
+const PlanToVisit = (scrollUp) => {
   return (
     <div className={Styles.Section}>
       <div className={Styles.Content_Container}>
@@ -15,7 +15,7 @@ const PlanToVisit = () => {
         </p>
 
         <Link to={"Visit"}>
-          <button className={Styles.Contact_Button}>Learn More</button>
+          <button onClick={scrollUp} className={Styles.Contact_Button}>Learn More</button>
         </Link>
       </div>
     </div>

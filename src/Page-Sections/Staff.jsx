@@ -26,7 +26,9 @@ const Staff = () => {
           <p className={Styles.Small_Text}>Commitee / Management</p>
           <p className={Styles.Large_Text}>Club Officials</p>
 
-          <button className={Styles.Staff_Button}>View All</button>
+          <Link to={"Membership"}>
+            <button className={Styles.Staff_Button}>View All</button>
+          </Link>
         </div>
 
         <div className={Styles.Diffuser}></div>
@@ -76,7 +78,9 @@ const Staff = () => {
                     <Link to={""} className={Styles.Link}>
                       <div className={Styles.Project_Card}>
                         <div className={Styles.Text_Container}>
-                          <p className={Styles.Name}>{value?.First_Name} {value?.Last_Name}</p>
+                          <p className={Styles.Name}>
+                            {value?.First_Name} {value?.Last_Name}
+                          </p>
                           <p className={Styles.Title}>{value?.Title}</p>
                         </div>
                         <div className={Styles.Diffuser}></div>

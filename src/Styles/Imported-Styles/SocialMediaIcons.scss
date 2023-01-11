@@ -1,62 +1,46 @@
-@import url("//maxcdn.bootstrapcdn.com/font-awesome/4.3.0/css/font-awesome.min.css");
-
-.footer-social-links {
-  font-size: 15px;
-  text-align: center;
-  gap: 30px;
-}
-.footer-social-links a {
-  width: 30px;
-  height: 30px;
-  line-height: 25px !important;
-  position: relative;
-  margin: 0 5px;
-  text-align: center;
-  display: inline-block;
-  gap: 30px;
-  color: white;
-
-  -webkit-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
-  -moz-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
-  -o-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
-  -ms-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
-  transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
-}
-.footer-social-links a i,
-.footer-social-links a span {
-  position: relative;
-  top: 2px;
-  left: 1px;
-}
-.footer-social-links a:before {
-  content: "";
-  display: inline-block;
+.center {
+  display: table;
   width: 100%;
-  height: 100%;
-  position: absolute;
-  top: 0;
-  left: 0;
-  border: 1px solid #111;
-
-  -webkit-border-radius: 2px;
-  -moz-border-radius: 2px;
-  border-radius: 2px;
-
-  -webkit-transform: rotate(45deg);
-  -moz-transform: rotate(45deg);
-  -o-transform: rotate(45deg);
-  -ms-transform: rotate(45deg);
-  transform: rotate(45deg);
-
-  -webkit-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
-  -moz-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
-  -o-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
-  -ms-transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
-  transition: all 0.27s cubic-bezier(0.3, 0.1, 0.58, 1);
+  height: 100vh;
 }
-.footer-social-links a:hover {
-  color: #fff;
+
+#social-test {
+  display: table-cell;
+  vertical-align: middle;
+  text-align: center;
+  font-size: 30px;
+  h2 {
+    color: #fff;
+    font-family: Futura, "Trebuchet MS", Arial, sans-serif;
+    font-weight: 100;
+  }
+  .social {
+    padding-left: 0px;
+  }
+  li {
+    color: rgba(167, 146, 129, 0.6);
+    list-style-type: none;
+    display: inline-block;
+    width: 50px;
+    height: 50px;
+    line-height: 50px;
+    padding: 1%;
+    border: 1px solid rgba(167, 146, 129, 0.4);
+    cursor: pointer;
+    margin-left: 10px;
+    margin-bottom: 20px;
+    transition: ease .3s;
+    &:hover {
+      color: rgba(167, 146, 129, 1);
+      border: 1px solid rgba(167, 146, 129, 1);
+    }
+  }
 }
-.footer-social-links a:hover:before {
-  background: #111;
+
+.social:hover > li {
+  opacity: 0.5;
+}
+
+.social:hover > li:hover {
+  opacity: 1;
 }

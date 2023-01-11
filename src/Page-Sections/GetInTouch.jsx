@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import "../Styles/Imported-Styles/SocialMediaIcons.scss";
 import Styles from "../Styles/Page-Section-Styles/GetInTouch.module.scss";
 
 // Material UI Icons Import Start
@@ -25,7 +26,36 @@ const GetInTouch = () => {
         </Link> */}
       </div>
 
-      <div className={Styles.Social_Icon_Bar}>
+      <div id="social-test">
+        <ul class="social">
+          <li>
+            <i class="fa fa-facebook" aria-hidden="true"></i>
+          </li>
+          <li>
+            <i class="fa fa-twitter" aria-hidden="true"></i>
+          </li>
+          <li>
+            <i class="fa fa-instagram" aria-hidden="true"></i>
+          </li>
+          <li>
+            <i class="fa fa-vimeo" aria-hidden="true"></i>
+          </li>
+          <li>
+            <i class="fa fa-behance" aria-hidden="true"></i>
+          </li>
+          <li>
+            <i class="fa fa-dribbble" aria-hidden="true"></i>
+          </li>
+          <li>
+            <i class="fa fa-github" aria-hidden="true"></i>
+          </li>
+          <li>
+            <i class="fa fa-pied-piper" aria-hidden="true"></i>
+          </li>
+        </ul>
+      </div>
+
+      {/* <div className={Styles.Social_Icon_Bar}>
         <div className={Styles.Social_Container}>
           <a href={`#`} target={"_blank"} rel={"noreferrer"}>
             <InstagramIcon
@@ -65,7 +95,7 @@ const GetInTouch = () => {
             <p className={Styles.Social_Title}>WhatsApp</p>
           </a>
         </div>
-      </div>
+      </div> */}
 
       {/* <div className={Styles.Form_Container}>
         <form action="" className={Styles.Form}>

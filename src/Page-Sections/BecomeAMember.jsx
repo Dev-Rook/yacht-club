@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Styles from "../Styles/Page-Section-Styles/BecomeAMember.module.scss";
 
-const BecomeAMember = () => {
+const BecomeAMember = (scrollUp) => {
   return (
     <div className={Styles.Section}>
       <div className={Styles.Content_Container}>
@@ -15,7 +15,7 @@ const BecomeAMember = () => {
         </p>
 
         <Link to={"Membership"}>
-          <button className={Styles.Contact_Button}>Apply</button>
+          <button onClick={scrollUp} className={Styles.Contact_Button}>Apply</button>
         </Link>
       </div>
     </div>

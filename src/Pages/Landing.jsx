@@ -14,19 +14,19 @@ import Weather from "../Page-Sections/Weather";
 import Staff from "../Page-Sections/Staff";
 // Page Section Import End
 
-const Landing = () => {
+const Landing = (scrollUp) => {
   TabTitle("MBYC | Home");
   return (
     <div className={Styles.Page}>
       <Hero />
-      <Introduction />
+      <Introduction scroll={scrollUp} />
       <Offer />
-      <PlanToVisit />
+      <PlanToVisit scroll={scrollUp} />
       <Tour />
-      <BecomeAMember />
+      <BecomeAMember scroll={scrollUp} />
       <Updates />
       <Weather />
-      <Staff />
+      <Staff scroll={scrollUp} />
     </div>
   );
 };
