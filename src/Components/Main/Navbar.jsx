@@ -76,42 +76,42 @@ const Navbar = () => {
 
       <Breadcrumbs className={Styles.Navlink_Container}>
         <li className={Styles.Navitem}>
-          <Link to={""} className={Styles.Navlink}>
+          <Link to={"/"} className={Styles.Navlink}>
             Home
           </Link>
         </li>
         <li className={Styles.Navitem}>
-          <Link to={""} className={Styles.Navlink}>
+          <Link to={"About"} className={Styles.Navlink}>
             About
           </Link>
         </li>
         <li className={Styles.Navitem}>
-          <Link to={""} className={Styles.Navlink}>
+          <Link to={"Visit"} className={Styles.Navlink}>
             Visit
           </Link>
         </li>
         <li className={Styles.Navitem}>
-          <Link to={""} className={Styles.Navlink}>
+          <Link to={"Sailing"} className={Styles.Navlink}>
             Sailing
           </Link>
         </li>
         <li className={Styles.Navitem}>
-          <Link to={""} className={Styles.Navlink}>
+          <Link to={"Fishing"} className={Styles.Navlink}>
             Fishing
           </Link>
         </li>
         <li className={Styles.Navitem}>
-          <Link to={""} className={Styles.Navlink}>
+          <Link to={"Membership"} className={Styles.Navlink}>
             Membership
           </Link>
         </li>
         <li className={Styles.Navitem}>
-          <Link to={""} className={Styles.Navlink}>
+          <Link to={"Articles"} className={Styles.Navlink}>
             Atricles
           </Link>
         </li>
         <li className={Styles.Navitem}>
-          <Link to={""} className={Styles.Navlink}>
+          <Link to={"Contact"} className={Styles.Navlink}>
             Contact
           </Link>
         </li>
