@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import Styles from "../Styles/Page-Section-Styles/SailingSections.module.scss";
 
-import J22Data from "../Assets/Data/J22.json";
+import J22Data from "../Data/J22.json";
 
 const J22Sailing = () => {
   const [data, setData] = useState(J22Data);

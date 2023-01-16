@@ -3,7 +3,7 @@ import { TabTitle } from "../Utilities/TabTitle";
 import { Link } from "react-router-dom";
 import Styles from "../Styles/Page-Styles/Visit.module.scss";
 
-import VisitHeader from "../Components/Headers/VisitHeader";
+import PageHead from "../Components/Main/PageHead";
 
 import UsefulInfo from "../Page-Sections/UsefulInfo";
 import Arrival from "../Page-Sections/Arrival";
@@ -15,7 +15,7 @@ const Visit = () => {
 
   return (
     <div className={Styles.Page}>
-      <VisitHeader />
+      <PageHead Title={"The Club Awaits!"} />
 
       <Arrival />
       <Berthing />

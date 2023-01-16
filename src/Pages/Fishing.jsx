@@ -2,13 +2,16 @@ import React, { useState } from "react";
 import { TabTitle } from "../Utilities/TabTitle";
 import Styles from "../Styles/Page-Styles/Fishing.module.scss";
 
-import FishingHeader from "../Components/Headers/FishingHeader"
+import PageHead from "../Components/Main/PageHead"
+
+import Reel from "../Assets/Images/Fishing-Reel.jpeg"
+
 
 const Fishing = () => {
   TabTitle("MBYC | Fishing");
   return (
     <div className={Styles.Page}>
-      <FishingHeader />
+      <PageHead Image={Reel} Title={"Do You Fish?"} />
     </div>
   );
 };

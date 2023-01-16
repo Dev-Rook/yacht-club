@@ -3,22 +3,15 @@ import { Link } from "react-router-dom";
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Styles from "../../Styles/Componet-Styles/Navbar.module.scss";
 
+import ClubFlag from "../../Assets/Images/Club-Flag.jpeg"
+
 import ListGroup from "react-bootstrap/ListGroup";
 
-import MenuIcon from "@mui/icons-material/Menu";
-import CloseIcon from "@mui/icons-material/Close";
 import Hamburger from "hamburger-react";
 
 import HomeIcon from "@mui/icons-material/Home";
 import InfoIcon from "@mui/icons-material/Info";
 import SailingIcon from "@mui/icons-material/Sailing";
-import Groups2Icon from "@mui/icons-material/Groups2";
-import CallIcon from "@mui/icons-material/Call";
-
-import InstagramIcon from "@mui/icons-material/Instagram";
-import FacebookIcon from "@mui/icons-material/Facebook";
-import TwitterIcon from "@mui/icons-material/Twitter";
-import WhatsAppIcon from "@mui/icons-material/WhatsApp";
 
 const NavVariants = {
   hidden: {
@@ -68,54 +61,45 @@ const Navbar = () => {
     <nav className={Styles.Navbar}>
       <div className={Styles.Image_Container} onClick={showMenu}>
         <img
-          src={`https://github.com/Dev-Rook/minimal-portfolio/blob/main/src/Assets/Images/Carbon%20Claws.png?raw=true`}
+          src={ClubFlag}
           alt=""
           className={Styles.Logo}
         />
       </div>
 
-      <Breadcrumbs className={Styles.Navlink_Container}>
-        <li className={Styles.Navitem}>
-          <Link to={"/"} className={Styles.Navlink}>
-            Home
-          </Link>
-        </li>
-        <li className={Styles.Navitem}>
-          <Link to={"About"} className={Styles.Navlink}>
-            About
-          </Link>
-        </li>
-        <li className={Styles.Navitem}>
-          <Link to={"Visit"} className={Styles.Navlink}>
-            Visit
-          </Link>
-        </li>
-        <li className={Styles.Navitem}>
-          <Link to={"Sailing"} className={Styles.Navlink}>
-            Sailing
-          </Link>
-        </li>
-        <li className={Styles.Navitem}>
-          <Link to={"Fishing"} className={Styles.Navlink}>
-            Fishing
-          </Link>
-        </li>
-        <li className={Styles.Navitem}>
-          <Link to={"Membership"} className={Styles.Navlink}>
-            Membership
-          </Link>
-        </li>
-        <li className={Styles.Navitem}>
-          <Link to={"Articles"} className={Styles.Navlink}>
-            Atricles
-          </Link>
-        </li>
-        <li className={Styles.Navitem}>
-          <Link to={"Contact"} className={Styles.Navlink}>
-            Contact
-          </Link>
-        </li>
-      </Breadcrumbs>
+      <div className={Styles.Navlink_Container}>
+        <Link onClick={scrollUp} to={"/"} className={Styles.Navlink}>
+          Home
+        </Link>
+
+        <Link onClick={scrollUp} to={"About"} className={Styles.Navlink}>
+          About
+        </Link>
+
+        <Link onClick={scrollUp} to={"Visit"} className={Styles.Navlink}>
+          Visit
+        </Link>
+
+        <Link onClick={scrollUp} to={"Sailing"} className={Styles.Navlink}>
+          Sailing
+        </Link>
+
+        <Link onClick={scrollUp} to={"Fishing"} className={Styles.Navlink}>
+          Fishing
+        </Link>
+
+        <Link onClick={scrollUp} to={"Membership"} className={Styles.Navlink}>
+          Membership
+        </Link>
+
+        <Link onClick={scrollUp} to={"Articles"} className={Styles.Navlink}>
+          Atricles
+        </Link>
+
+        <Link onClick={scrollUp} to={"Contact"} className={Styles.Navlink}>
+          Contact
+        </Link>
+      </div>
 
       <span className={Styles.Span}>
         <Hamburger

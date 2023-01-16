@@ -27,30 +27,30 @@ const GetInTouch = () => {
       </div>
 
       <div id="social-test">
-        <ul class="social">
+        <ul className="social">
           <li>
-            <i class="fa fa-facebook" aria-hidden="true"></i>
+            <i className="fa fa-facebook" aria-hidden="true"></i>
           </li>
           <li>
-            <i class="fa fa-twitter" aria-hidden="true"></i>
+            <i className="fa fa-twitter" aria-hidden="true"></i>
           </li>
           <li>
-            <i class="fa fa-instagram" aria-hidden="true"></i>
+            <i className="fa fa-instagram" aria-hidden="true"></i>
           </li>
           <li>
-            <i class="fa fa-vimeo" aria-hidden="true"></i>
+            <i className="fa fa-vimeo" aria-hidden="true"></i>
           </li>
           <li>
-            <i class="fa fa-behance" aria-hidden="true"></i>
+            <i className="fa fa-behance" aria-hidden="true"></i>
           </li>
           <li>
-            <i class="fa fa-dribbble" aria-hidden="true"></i>
+            <i className="fa fa-dribbble" aria-hidden="true"></i>
           </li>
           <li>
-            <i class="fa fa-github" aria-hidden="true"></i>
+            <i className="fa fa-github" aria-hidden="true"></i>
           </li>
           <li>
-            <i class="fa fa-pied-piper" aria-hidden="true"></i>
+            <i className="fa fa-pied-piper" aria-hidden="true"></i>
           </li>
         </ul>
       </div>

@@ -2,15 +2,15 @@ import React, { useState } from "react";
 import { TabTitle } from "../Utilities/TabTitle";
 import Styles from "../Styles/Page-Styles/Updates.module.scss";
 
-import ArticlesHeader from "../Components/Headers/ArticlesHeader"
-import UpdatesData from "../Assets/Data/Updates.json";
+import PageHead from "../Components/Main/PageHead"
+import UpdatesData from "../Data/Updates.json";
 
 const Updates = () => {
   TabTitle("MBYC | Updates");
   const [data, setData] = useState(UpdatesData);
   return (
     <div className={Styles.Page}>
-      <ArticlesHeader />
+      <PageHead Title={"Club Articles"} />
       <div className={Styles.Card_Section}>
         <div className={Styles.Content_Container}>
           {data &&

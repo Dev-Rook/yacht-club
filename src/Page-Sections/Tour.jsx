@@ -3,7 +3,7 @@ import { Link } from "react-router-dom";
 import { motion } from "framer-motion";
 import Styles from "../Styles/Page-Section-Styles/Tour.module.scss";
 
-import TourData from "../Assets/Data/Tour.json";
+import TourData from "../Data/Tour.json";
 
 const Tour = () => {
   const [data, setData] = useState(TourData);

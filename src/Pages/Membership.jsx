@@ -2,16 +2,18 @@ import React, { useState } from "react";
 import { TabTitle } from "../Utilities/TabTitle";
 import Styles from "../Styles/Page-Styles/Membership.module.scss";
 
-import MembershipHeader from "../Components/Headers/MembershipHeader"
+import PageHead from "../Components/Main/PageHead"
 import Table from "react-bootstrap/Table";
 import Benifits from "../Page-Sections/Benifits";
 import MembershipForm from "../Page-Sections/MembershipForm";
+
+import ClubFlag from "../Assets/Images/Club-Flag.jpeg"
 
 const Membership = () => {
   TabTitle("MBYC | Membership");
   return (
     <div className={Styles.Page}>
-      <MembershipHeader />
+      <PageHead Image={ClubFlag} Title={"Join Our Club?"} />
 
 
       <div className={Styles.Section}>

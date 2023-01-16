@@ -1,7 +1,7 @@
 import React, { useState } from "react";
 import Styles from "../Styles/Page-Section-Styles/UsefulInfo.module.scss";
 
-import UsefulInfoData from "../Assets/Data/UsefulInfo.json";
+import UsefulInfoData from "../Data/UsefulInfo.json";
 
 const UsefulInfo = () => {
   const [data, setData] = useState(UsefulInfoData);
