@@ -1,107 +1,120 @@
 .Navbar {
   display: flex;
-  background-color: rgba(255, 255, 255, 0.1);
-  backdrop-filter: blur(5px);
+
+  background-color: rgba(36, 36, 36, 1);
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  backdrop-filter: 5px;
 
   position: fixed;
-  top: 0px;
-  left: 0px;
-
-  padding: 5px;
+  top: 0;
+  left: 0;
 
   justify-content: space-between;
   align-items: center;
+
+  padding: 10px;
 
   height: fit-content;
   width: 100%;
 
   transition: 0.3s;
-  z-index: 50;
+  z-index: 100;
 
-  .Image_Container {
-    border: 1px solid white;
-    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
-    background-color: rgba(0, 0, 0, 0.5);
-    border-radius: 50%;
-
-    overflow: hidden;
-    cursor: pointer;
-
+  .Left_Side {
     display: flex;
-    justify-content: center;
-    align-items: center;
-
-    height: 40px;
-    width: 40px;
-
-    .Logo {
-      height: 100%;
-      width: 100%;
-      object-fit: cover;
-    }
-  }
-
-  .Navlink_Container {
-    display: flex;
-
     gap: 20px;
     padding: 5px;
-
     justify-content: space-evenly;
     align-items: center;
 
-    height: 100%;
-    width: fit-content;
-
-    .Navlink {
-      font-size: 16x;
+    .Slogan {
+      color: white;
+      font-size: 20px;
       font-weight: 300;
+      margin: auto;
       cursor: pointer;
+    }
+
+    .Logo {
+      height: 30px;
+      width: 30px;
+    }
+
+    .Navlink_Container {
+      display: flex;
+      gap: 20px;
+      justify-content: space-evenly;
+      align-items: center;
+
+      .Navlink {
+        color: white;
+        font-family: "Nunito", sans-serif;
+        font-size: 15px;
+        font-weight: 200;
+        text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.96);
+        cursor: pointer;
+      }
     }
   }
 
-  .Span {
-    display: none;
-    cursor: pointer;
-    z-index: 200;
-    // color: white;
+  .Right_Side {
+    display: flex;
+    gap: 20px;
+    padding: 5px;
+    justify-content: space-evenly;
+    align-items: center;
+
+    .Social_Icon_Tray {
+      display: flex;
+      gap: 10px;
+      justify-content: space-evenly;
+      align-items: center;
+    }
+
+    .Span {
+      display: none;
+      z-index: 110;
+    }
   }
 
   //   Mobile Menu Start
   .Mobile_Menu {
-    display: flex;
-    flex-direction: column;
-    background-color: #202123;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px,
-      rgba(0, 0, 0, 0.3) 0px 3px 7px -3px;
+    display: none;
+    background-color: rgba(0, 0, 0, 1);
+    backdrop-filter: blur(10px);
 
     position: absolute;
     top: 0;
     bottom: 0;
     right: 0;
 
+    justify-content: center;
+    align-items: center;
     height: 100vh;
-    width: 300px;
+    width: 100%;
 
-    z-index: 100;
+    // overflow: scroll;
+    z-index: 11;
     transition: 0.5s;
-    transform: translateX(100vw);
+    transform: translateY(100vh);
 
     .ListGroup {
-      background-color: #202123;
-      margin-top: 10px;
-
-      justify-content: space-evenly;
-      align-items: center;
+      border-radius: 0;
 
       gap: 1px;
 
-      height: 100%;
-      width: 100%;
+      justify-content: space-between;
+
+      height: 60%;
+      width: 60%;
 
       .ListGroupItem {
+        background-color: rgba(0, 0, 0, 0);
+
         color: white;
-        background-color: #202123;
+        font-size: 30px;
+        font-weight: 500;
+
         border: none;
         // border: 1px solid rgba(255, 255, 255, .1);
 
@@ -110,12 +123,48 @@
         justify-content: flex-start;
 
         gap: 10px;
+      }
+    }
 
-        font-size: 20px;
+    .Contact_Information_Box {
+      border-radius: 0;
 
-        .Navlink_Icon {
-          width: 25px;
-          height: 25px;
+      display: flex;
+      flex-direction: column;
+
+      gap: 20px;
+      padding: 5px;
+
+      justify-content: center;
+      align-items: flex-start;
+
+      height: 60%;
+      width: 40%;
+
+      .Contact_item {
+        display: flex;
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        height: fit-content;
+        width: fit-content;
+
+        .Title {
+          color: rgb(120, 48, 50);
+          font-size: 20px;
+          font-style: bold;
+          text-align: left;
+
+          margin: auto;
+          margin-bottom: 10px;
+          width: 100%;
+        }
+
+        .Text {
+          color: lightgray;
+          margin: auto;
+          font-size: 14px;
         }
       }
     }
@@ -126,41 +175,54 @@
     transform: translateY(0%);
   }
 }
-// Navbar End
 
-::-webkit-scrollbar {
-  width: 0px;
-}
-
-// Media Queries Start
 @media only screen and (max-width: 996px) {
   .Navbar {
-    .Navlink_Container {
-      display: none;
+    .Left_Side {
+      .Navlink_Container {
+        display: none;
+      }
     }
-    .Span {
-      display: block;
+
+    .Right_Side {
+      .Social_Icon_Tray {
+        display: none;
+      }
+      .Span {
+        display: flex;
+      }
+    }
+
+    .Mobile_Menu {
+      display: flex;
     }
   }
 }
-@media only screen and (max-width: 480px) {
+
+@media only screen and (max-width: 768px) {
   .Navbar {
-    padding: 10px;
     .Mobile_Menu {
-      width: 100%;
-    }
-  }
-}
-@media only screen and (max-width: 320px) {
-  .Navbar {
-    padding: 10px;
-    .Mobile_Menu {
-      height: 100vh;
       .ListGroup {
-        display: grid;
-        grid-template-columns: 1fr 1fr;
+        width: 100%;
+      }
+      .Contact_Information_Box {
+        display: none;
       }
     }
   }
 }
-// Media Queries End
+
+@media only screen and (max-width: 480px) {
+  .Navbar {
+    padding: 10px;
+    .Mobile_Menu {
+      .ListGroup {
+        height: 90%;
+
+        .ListGroupItem {
+          font-size: 25px;
+        }
+      }
+    }
+  }
+}

@@ -1,34 +1,17 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-import Breadcrumbs from "@mui/material/Breadcrumbs";
+// import { useScrollUp } from "../Hooks/useScrollUp";
 import Styles from "../../Styles/Componet-Styles/Navbar.module.scss";
 
-import ClubFlag from "../../Assets/Images/Club-Flag.jpeg"
+import ClubFlag from "../../Assets/Images/ClubFlag.jpeg";
 
-import ListGroup from "react-bootstrap/ListGroup";
+import TwitterIcon from "@mui/icons-material/Twitter";
+import YouTubeIcon from "@mui/icons-material/YouTube";
+import InstagramIcon from "@mui/icons-material/Instagram";
+import BrightnessMediumIcon from "@mui/icons-material/BrightnessMedium";
 
 import Hamburger from "hamburger-react";
-
-import HomeIcon from "@mui/icons-material/Home";
-import InfoIcon from "@mui/icons-material/Info";
-import SailingIcon from "@mui/icons-material/Sailing";
-
-const NavVariants = {
-  hidden: {
-    y: "-100vh",
-    opacity: 0,
-  },
-
-  visible: {
-    y: 0,
-    opacity: 1,
-
-    transition: {
-      delay: 0.2,
-      duration: 1.5,
-    },
-  },
-};
+import ListGroup from "react-bootstrap/ListGroup";
 
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
@@ -59,65 +42,57 @@ const Navbar = () => {
 
   return (
     <nav className={Styles.Navbar}>
-      <div className={Styles.Image_Container} onClick={showMenu}>
-        <img
-          src={ClubFlag}
-          alt=""
-          className={Styles.Logo}
-        />
+      <div className={Styles.Left_Side}>
+        <img src={ClubFlag} alt="" className={Styles.Logo} />
+
+        <div className={Styles.Navlink_Container}>
+          <Link to={"/"} onClick={scrollUp} className={Styles.Navlink}>
+            Home
+          </Link>
+          <Link to={"About"} onClick={scrollUp} className={Styles.Navlink}>
+            About
+          </Link>
+          <Link to={"Curriculas"} onClick={scrollUp} className={Styles.Navlink}>
+            Curriculas
+          </Link>
+          <Link to={"Documents"} onClick={scrollUp} className={Styles.Navlink}>
+            Documents
+          </Link>
+          <Link to={"Updates"} onClick={scrollUp} className={Styles.Navlink}>
+            Updates
+          </Link>
+          <Link to={"Apply"} onClick={scrollUp} className={Styles.Navlink}>
+            Apply
+          </Link>
+        </div>
       </div>
 
-      <div className={Styles.Navlink_Container}>
-        <Link onClick={scrollUp} to={"/"} className={Styles.Navlink}>
-          Home
-        </Link>
-
-        <Link onClick={scrollUp} to={"About"} className={Styles.Navlink}>
-          About
-        </Link>
-
-        <Link onClick={scrollUp} to={"Visit"} className={Styles.Navlink}>
-          Visit
-        </Link>
-
-        <Link onClick={scrollUp} to={"Sailing"} className={Styles.Navlink}>
-          Sailing
-        </Link>
-
-        <Link onClick={scrollUp} to={"Fishing"} className={Styles.Navlink}>
-          Fishing
-        </Link>
-
-        <Link onClick={scrollUp} to={"Membership"} className={Styles.Navlink}>
-          Membership
-        </Link>
-
-        <Link onClick={scrollUp} to={"Articles"} className={Styles.Navlink}>
-          Atricles
-        </Link>
-
-        <Link onClick={scrollUp} to={"Contact"} className={Styles.Navlink}>
-          Contact
-        </Link>
+      <div className={Styles.Right_Side}>
+        <div className={Styles.Social_Icon_Tray}>
+          <TwitterIcon sx={{color: "white"}} />
+          <YouTubeIcon sx={{color: "white"}} />
+          <InstagramIcon sx={{color: "white"}} />
+        </div>
+        |
+        <BrightnessMediumIcon sx={{color: "white"}} />
+        <span className={Styles.Span}>
+          <Hamburger
+            className={Styles.HamburgerMenu}
+            onToggle={setMenu}
+            direction="right"
+            color="white"
+            duration={0.5}
+            size={35}
+          />
+        </span>
       </div>
-
-      <span className={Styles.Span}>
-        <Hamburger
-          className={Styles.HamburgerMenu}
-          onToggle={setMenu}
-          direction="right"
-          color="#ffffff"
-          duration={0.5}
-          size={35}
-        />
-      </span>
 
       {/* Mobile Menu Start  */}
       <div className={`${Styles.Mobile_Menu} ${menu ? Styles.Reveal : ""}`}>
         <ListGroup className={Styles.ListGroup}>
           <Link onClick={doubleFunction} className={Styles.Navlink} to={"/"}>
             <ListGroup.Item className={Styles.ListGroupItem}>
-              <HomeIcon sx={{ color: "White", fontSize: 25 }} />
+              {/* <HomeIcon sx={{ color: "White", fontSize: 25 }} /> */}
               Home
             </ListGroup.Item>
           </Link>
@@ -128,7 +103,7 @@ const Navbar = () => {
             to={"About"}
           >
             <ListGroup.Item className={Styles.ListGroupItem}>
-              <InfoIcon sx={{ color: "White", fontSize: 25 }} />
+              {/* <InfoIcon sx={{ color: "White", fontSize: 25 }} /> */}
               About
             </ListGroup.Item>
           </Link>
@@ -139,11 +114,7 @@ const Navbar = () => {
             to={"Visit"}
           >
             <ListGroup.Item className={Styles.ListGroupItem}>
-              <img
-                src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Icons/Anchor.png?raw=true`}
-                alt=""
-                className={Styles.Navlink_Icon}
-              />
+              {/* <AssignmentIcon sx={{ color: "White", fontSize: 25 }} /> */}
               Visit
             </ListGroup.Item>
           </Link>
@@ -154,7 +125,7 @@ const Navbar = () => {
             to={"Sailing"}
           >
             <ListGroup.Item className={Styles.ListGroupItem}>
-              <SailingIcon sx={{ color: "White", fontSize: 25 }} />
+              {/* <FolderIcon sx={{ color: "White", fontSize: 25 }} /> */}
               Sailing
             </ListGroup.Item>
           </Link>
@@ -165,60 +136,48 @@ const Navbar = () => {
             to={"Fishing"}
           >
             <ListGroup.Item className={Styles.ListGroupItem}>
-              <img
-                src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Icons/Fishing.png?raw=true`}
-                alt=""
-                className={Styles.Navlink_Icon}
-              />
+              {/* <ArticleIcon sx={{ color: "White", fontSize: 25 }} /> */}
               Fishing
             </ListGroup.Item>
           </Link>
-
-          <Link
-            onClick={doubleFunction}
-            className={Styles.Navlink}
-            to={"Membership"}
-          >
-            <ListGroup.Item className={Styles.ListGroupItem}>
-              <img
-                src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Icons/Membership.png?raw=true`}
-                alt=""
-                className={Styles.Navlink_Icon}
-              />
-              Membership
-            </ListGroup.Item>
-          </Link>
-
+          
           <Link
             onClick={doubleFunction}
             className={Styles.Navlink}
             to={"Articles"}
           >
             <ListGroup.Item className={Styles.ListGroupItem}>
-              <img
-                src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Icons/Updates.png?raw=true`}
-                alt=""
-                className={Styles.Navlink_Icon}
-              />
+              {/* <CallIcon sx={{ color: "white", fontSize: 25 }} /> */}
               Articles
             </ListGroup.Item>
           </Link>
-
           <Link
             onClick={doubleFunction}
             className={Styles.Navlink}
             to={"Contact"}
           >
             <ListGroup.Item className={Styles.ListGroupItem}>
-              <img
-                src={`https://github.com/Dev-Rook/yacht-club/blob/master/src/Assets/Icons/Call.png?raw=true`}
-                alt=""
-                className={Styles.Navlink_Icon}
-              />
+              {/* <CallIcon sx={{ color: "white", fontSize: 25 }} /> */}
               Contact
             </ListGroup.Item>
           </Link>
         </ListGroup>
+
+        <div className={Styles.Contact_Information_Box}>
+          <div className={Styles.Contact_item}>
+            <p className={Styles.Title}>School</p>
+            <p className={Styles.Text}>221 B Baker Street</p>
+          </div>
+          <div className={Styles.Contact_item}>
+            <p className={Styles.Title}>Contact</p>
+            <p className={Styles.Text}>1 876 192 1680</p>
+            <p className={Styles.Text}>hhs@gmail.com</p>
+          </div>
+          <div className={Styles.Contact_item}>
+            <p className={Styles.Title}>Social Media</p>
+            <p className={Styles.Text}>221 B Baker Street</p>
+          </div>
+        </div>
       </div>
       {/* Mobile Menu End */}
     </nav>
