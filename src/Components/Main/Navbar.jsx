@@ -69,12 +69,12 @@ const Navbar = () => {
 
       <div className={Styles.Right_Side}>
         <div className={Styles.Social_Icon_Tray}>
-          <TwitterIcon sx={{color: "white"}} />
-          <YouTubeIcon sx={{color: "white"}} />
-          <InstagramIcon sx={{color: "white"}} />
+          <TwitterIcon sx={{ color: "white" }} />
+          <YouTubeIcon sx={{ color: "white" }} />
+          <InstagramIcon sx={{ color: "white" }} />
         </div>
         |
-        <BrightnessMediumIcon sx={{color: "white"}} />
+        <BrightnessMediumIcon sx={{ color: "white" }} />
         <span className={Styles.Span}>
           <Hamburger
             className={Styles.HamburgerMenu}
@@ -140,7 +140,16 @@ const Navbar = () => {
               Fishing
             </ListGroup.Item>
           </Link>
-          
+          <Link
+            onClick={doubleFunction}
+            className={Styles.Navlink}
+            to={"Membership"}
+          >
+            <ListGroup.Item className={Styles.ListGroupItem}>
+              {/* <CallIcon sx={{ color: "white", fontSize: 25 }} /> */}
+              Membership
+            </ListGroup.Item>
+          </Link>
           <Link
             onClick={doubleFunction}
             className={Styles.Navlink}
@@ -165,17 +174,18 @@ const Navbar = () => {
 
         <div className={Styles.Contact_Information_Box}>
           <div className={Styles.Contact_item}>
-            <p className={Styles.Title}>School</p>
+            <p className={Styles.Title}>Yacht Club</p>
             <p className={Styles.Text}>221 B Baker Street</p>
           </div>
           <div className={Styles.Contact_item}>
             <p className={Styles.Title}>Contact</p>
             <p className={Styles.Text}>1 876 192 1680</p>
-            <p className={Styles.Text}>hhs@gmail.com</p>
+            <p className={Styles.Text}>mbyc@gmail.com</p>
           </div>
           <div className={Styles.Contact_item}>
             <p className={Styles.Title}>Social Media</p>
-            <p className={Styles.Text}>221 B Baker Street</p>
+            <p className={Styles.Text}>Twitter</p>
+            <p className={Styles.Text}>Facebook</p>
           </div>
         </div>
       </div>
