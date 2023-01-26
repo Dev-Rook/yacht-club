@@ -50,8 +50,8 @@ const Arrival_Information = () => {
 
       <Rates />
 
-      {/* Venual Section */}
-      <p className={Styles.Section_Title}>Venua & Rental</p>
+      {/* Venue Section */}
+      <p className={Styles.Section_Title}>Venue & Rental</p>
       <hr />
       <p className={Styles.Section_Description}>
         'The Montego Bay Yacht Club provides a beautiful setting for a romantic
@@ -62,7 +62,7 @@ const Arrival_Information = () => {
         information on +1 (876) 979 8038, email us at venue@mobayyachtclub.com.
         .
       </p>
-      {/* Venual Section */}
+      {/* Venue Section */}
     </div>
   );
 };
