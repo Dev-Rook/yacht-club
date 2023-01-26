@@ -6,8 +6,7 @@ import Styles from "../Styles/Page-Styles/Visit.module.scss";
 import PageHead from "../Components/Main/PageHead";
 
 import UsefulInfo from "../Page-Sections/UsefulInfo";
-import Arrival from "../Page-Sections/Arrival";
-import Berthing from "../Page-Sections/Berthing";
+import Arrival_Information from "../Page-Sections/Arrival_Information";
 import Rates from "../Components/Secondary/Rates";
 
 const Visit = () => {
@@ -17,9 +16,9 @@ const Visit = () => {
     <div className={Styles.Page}>
       <PageHead Title={"The Club Awaits!"} />
 
-      <Arrival />
-      <Berthing />
-      <Rates />
+      <Arrival_Information />
+      {/* <Berthing /> */}
+      {/* <Rates /> */}
       <UsefulInfo />
     </div>
   );

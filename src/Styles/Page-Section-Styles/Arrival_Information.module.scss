@@ -8,7 +8,7 @@
   justify-content: center;
   align-items: left;
 
-  gap: 20px;
+  gap: 15px;
 
   padding: 5px;
   padding-top: 80px;
@@ -18,31 +18,23 @@
   height: fit-content;
   width: 1000px;
 
-  .Section_Title_Container {
+  .Section_Image_Container {
     display: flex;
-    flex-direction: column;
-
-    padding: 0px;
-    gap: 10px;
-
-    justify-content: center;
     align-items: center;
 
-    height: fit-content;
+    border: 1px solid white;
+
+    height: 300px;
     width: 100%;
+  }
 
-    .Question {
-      font-size: 18px;
-      font-weight: 100;
-      font-style: bold;
-      transition: 0.3s;
-    }
+  .Section_Title {
+    font-size: 30px;
+  }
 
-    .Section_Title {
-      font-size: 30px;
-      font-weight: 100;
-      font-style: bold;
-      transition: 0.3s;
+  .Section_Description {
+    .Link {
+      color: red;
     }
   }
 
@@ -64,9 +56,10 @@
 
       display: flex;
       flex-direction: column;
+      position: relative;
 
-      padding: 10px;
-      // gap: 10px;
+      padding: 20px;
+      gap: 10px;
 
       justify-content: center;
       align-items: left;
@@ -80,10 +73,16 @@
       width: 100%;
 
       transition: 0.3s;
+      overflow: hidden;
 
       .Icon {
-        height: 55px;
-        width: 55px;
+        position: absolute;
+        top: 0;
+        left: 0;
+        object-fit: cover;
+        height: 100%;
+        width: 100%;
+        transition: 0.5s;
       }
 
       .Title {
@@ -94,7 +93,7 @@
 
       .Description {
         color: white;
-        font-size: 13.5px;
+        font-size: 14px;
         font-weight: 100;
       }
     }
@@ -108,5 +107,27 @@
 @media only screen and (max-width: 1000px) {
   .Section {
     width: 100%;
+  }
+}
+@media only screen and (max-width: 480px) {
+  .Section {
+    .Content_Container {
+      grid-template-columns: 1fr 1fr;
+      .Card {
+        height: 200px;
+        .Title {
+          font-size: 12px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (max-width: 340px) {
+  .Section {
+    .Content_Container {
+      .Card {
+        height: 150px;
+      }
+    }
   }
 }

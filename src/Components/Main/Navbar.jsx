@@ -61,7 +61,7 @@ const Navbar = () => {
           <Link to={"Fishing"} onClick={scrollUp} className={Styles.Navlink}>
             Fishing
           </Link>
-          <Link to={"Apply"} onClick={scrollUp} className={Styles.Navlink}>
+          <Link to={"Contact"} onClick={scrollUp} className={Styles.Navlink}>
             Contact
           </Link>
         </div>
