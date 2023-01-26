@@ -2,7 +2,7 @@ import React from "react";
 import { Link } from "react-router-dom";
 import Styles from "../Styles/Page-Section-Styles/Arrival_Information.module.scss";
 
-import Rates from "../Components/Secondary/Rates"
+import Rates from "../Components/Secondary/Rates";
 
 const Arrival_Information = () => {
   return (
@@ -46,8 +46,23 @@ const Arrival_Information = () => {
         </Link>
         .
       </p>
+      {/* Berthing Section */}
 
       <Rates />
+
+      {/* Venual Section */}
+      <p className={Styles.Section_Title}>Venua & Rental</p>
+      <hr />
+      <p className={Styles.Section_Description}>
+        'The Montego Bay Yacht Club provides a beautiful setting for a romantic
+        dinner for two, a Friday night get together of friends and family,
+        intimate weddings and private functions. The Club can handle up to 250
+        people for seated occasions and 300 people for other, less formal
+        events. Contact Club Management for venue rentals and additional
+        information on +1 (876) 979 8038, email us at venue@mobayyachtclub.com.
+        .
+      </p>
+      {/* Venual Section */}
     </div>
   );
 };
