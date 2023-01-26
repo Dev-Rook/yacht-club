@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
-// import { useScrollUp } from "../Hooks/useScrollUp";
+import useScrollUp from "../../Hooks/useScrollUp";
 import Styles from "../../Styles/Componet-Styles/Navbar.module.scss";
 
 import ClubFlag from "../../Assets/Images/ClubFlag.jpeg";
@@ -16,18 +16,19 @@ import ListGroup from "react-bootstrap/ListGroup";
 const Navbar = () => {
   const [menu, setMenu] = useState(false);
   const [isOpen, setOpen] = useState(false);
+  const { scrollUp } = useScrollUp();
 
   const showMenu = () => {
     setMenu((prev) => !prev);
     console.log("Working menu");
   };
 
-  const scrollUp = () => {
-    window.scrollTo({
-      top: 0,
-      behavior: "smooth",
-    });
-  };
+  // const scrollUp = () => {
+  //   window.scrollTo({
+  //     top: 0,
+  //     behavior: "smooth",
+  //   });
+  // };
 
   function handleClick(event) {
     event.preventDefault();
