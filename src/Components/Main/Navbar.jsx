@@ -52,17 +52,17 @@ const Navbar = () => {
           <Link to={"About"} onClick={scrollUp} className={Styles.Navlink}>
             About
           </Link>
-          <Link to={"Curriculas"} onClick={scrollUp} className={Styles.Navlink}>
-            Curriculas
+          <Link to={"Visit"} onClick={scrollUp} className={Styles.Navlink}>
+            Visit
           </Link>
-          <Link to={"Documents"} onClick={scrollUp} className={Styles.Navlink}>
-            Documents
+          <Link to={"Sailing"} onClick={scrollUp} className={Styles.Navlink}>
+            Sailing
           </Link>
-          <Link to={"Updates"} onClick={scrollUp} className={Styles.Navlink}>
-            Updates
+          <Link to={"Fishing"} onClick={scrollUp} className={Styles.Navlink}>
+            Fishing
           </Link>
           <Link to={"Apply"} onClick={scrollUp} className={Styles.Navlink}>
-            Apply
+            Contact
           </Link>
         </div>
       </div>
