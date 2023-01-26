@@ -1,20 +1,20 @@
 [
     {
         "id": 1,
-        "Icon": "",
+        "Thumbnail": "",
         "Title": "Great Facilities",
-        "Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae vero voluptates culpa quia quod exercitationem possimus sequi facilis quas non?"
+        "Link": ""
     },
     {
         "id": 2,
-        "Icon": "",
+        "Thumbnail": "",
         "Title": "Sailing",
-        "Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae vero voluptates culpa quia quod exercitationem possimus sequi facilis quas non?"
+        "Link": ""
     },
     {
         "id": 3,
-        "Icon": "",
+        "Thumbnail": "",
         "Title": "Fishing",
-        "Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae vero voluptates culpa quia quod exercitationem possimus sequi facilis quas non?"
+        "Link": ""
     }
 ]

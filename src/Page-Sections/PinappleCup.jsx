@@ -1,4 +1,4 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Styles from "../Styles/Page-Section-Styles/SailingSections.module.scss";
 
 import J22Data from "../Data/J22.json";
@@ -13,8 +13,14 @@ const PinappleCup = () => {
 
       <p className={Styles.Section_Title}>Pinepple Cup</p>
       <p className={Styles.Section_Description}>
-        Lorem ipsum dolor sit amet consectetur adipisicing elit. Sed quis labore
-        tempore temporibus, animi repellendus voluptas ut eos beatae voluptates.
+        One of the oldest offshore races on the calendar, The Pineapple Cup –
+        Montego Bay Race started in 1961, making 2017 the 33rd edition of the
+        venerable 811 nautical mile race. Immediately after the start, racers
+        cross the Gulf Stream for the Northwest Providence Channel. The middle
+        of the race offers a fetch down the eastern side of the Bahamas Island
+        Chain toward the tip of Cuba. The final stretch is typically a sailor’s
+        dream: a 240-mile downwind sleigh ride from Cuba’s eastern tip, known as
+        the Windward Passage, to the finish at Montego Bay.
       </p>
 
       <div className={Styles.Content_Container}>

@@ -6,6 +6,7 @@ import Styles from "../Styles/Page-Styles/About.module.scss";
 import PageHead from "../Components/Main/PageHead";
 import History from "../Page-Sections/History";
 import HistoricalDocs from "../Page-Sections/HistoricalDocs";
+import Tour from "../Page-Sections/Tour";
 
 import SuperTramp from "../Assets/Images/SuperTramp.jpeg"
 
@@ -17,6 +18,7 @@ const About = () => {
 
       <History />
       <HistoricalDocs />
+      <Tour />
     </div>
   );
 };
