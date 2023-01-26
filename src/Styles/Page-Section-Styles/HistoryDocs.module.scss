@@ -16,7 +16,7 @@
   overflow: hidden;
 
   height: fit-content;
-  width: 100%;
+  width: 1000px;
 
   .Section_Title_Container {
     display: flex;
@@ -105,6 +105,11 @@
   }
 }
 // Media Queries Start
+@media only screen and (max-width: 1000px) {
+  .Section {
+    width: 100% ;
+  }
+}
 @media only screen and (max-width: 996px) {
   .Section {
     .Section_Title_Container {

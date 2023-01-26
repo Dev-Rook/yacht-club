@@ -6,6 +6,7 @@ import NavigationIcon from "@mui/icons-material/Navigation";
 
 import Navbar from "./Components/Main/Navbar";
 import GetInTouch from "./Page-Sections/GetInTouch";
+import Map from "./Page-Sections/Map";
 import Footer from "./Components/Main/Footer";
 import Fallback from "./Pages/Fallback";
 
@@ -56,6 +57,7 @@ function App() {
             <Route path={"Contact"} element={<Contact />} />
           </Routes>
         </Suspense>
+        <Map />
         <GetInTouch />
         <Footer />
       </BrowserRouter>
