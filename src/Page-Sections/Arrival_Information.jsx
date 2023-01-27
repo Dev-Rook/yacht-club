@@ -59,8 +59,15 @@ const Arrival_Information = () => {
         intimate weddings and private functions. The Club can handle up to 250
         people for seated occasions and 300 people for other, less formal
         events. Contact Club Management for venue rentals and additional
-        information on +1 (876) 979 8038, email us at venue@mobayyachtclub.com.
-        .
+        information on +1 (876) 979 8038, email us at{" "}
+        <a
+          href={`https://mail.google.com/mail/u/0/#inbox?compose=lqrsltdlZtXjvLjCtrKfxVTgjrnjjSmXgHVcVXFqFbLfjNcJpmbHPpdlKkDzpdNTrqlhCXCRWkKQswHjz`}
+          target={"_blank"}
+          rel={"noreferrer"}
+          className={Styles.Link}
+        >
+          venue@mobayyachtclub.com
+        </a>.
       </p>
       {/* Venue Section */}
     </div>
