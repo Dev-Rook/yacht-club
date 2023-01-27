@@ -25,8 +25,14 @@
     },
     {
         "id": 5,
-        "Icon": "",
-        "Title": "Venue & Rental",
-        "Description": "Lorem ipsum dolor sit, amet consectetur adipisicing elit. Repudiandae vero voluptates culpa quia quod exercitationem possimus sequi facilis quas non?"
+        "Preview": "",
+        "Title": "Title",
+        "Description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, aliquam."
+    },
+    {
+        "id": 6,
+        "Preview": "",
+        "Title": "Title",
+        "Description": "Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illum, aliquam."
     }
 ]

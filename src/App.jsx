@@ -44,10 +44,10 @@ function App() {
   return (
     <div className={Styles.App}>
       <BrowserRouter>
-        <Navbar scroll={scrollUp} />
+        <Navbar />
         <Suspense fallback={<Fallback />}>
           <Routes>
-            <Route path={"/"} element={<Landing scroll={scrollUp} />} />
+            <Route path={"/"} element={<Landing />} />
             <Route path={"About"} element={<About />} />
             <Route path={"Visit"} element={<Visit />} />
             <Route path={"Articles"} element={<Articles />} />
