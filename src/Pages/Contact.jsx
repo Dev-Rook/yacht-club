@@ -1,6 +1,8 @@
 import React from 'react'
 import Styles from "../Styles/Page-Styles/Contact.module.scss"
 
+import ContactForm from '../Components/Secondary/ContactForm'
+
 const Contact = () => {
   return (
     <div className={Styles.Page}>
@@ -8,6 +10,8 @@ const Contact = () => {
         <div className={Styles.Diffuser}></div>
         <img src={``} alt="" className={Styles.Header_Image} />
       </div>   
+
+      <ContactForm />
     </div>
   )
 }
