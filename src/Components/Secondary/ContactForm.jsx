@@ -4,7 +4,7 @@ import Styles from "../../Styles/Componet-Styles/ContactForm.module.scss";
 const ContactForm = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
-  const [phone, setPhone] = useState("");
+  const [phone, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
   return (
@@ -25,7 +25,7 @@ const ContactForm = () => {
             className={Styles.Input}
             placeholder={"Email"}
             onChange={(e) => {
-              setName(e.target.value);
+              setEmail(e.target.value);
             }}
             required
           />
@@ -35,7 +35,7 @@ const ContactForm = () => {
           className={Styles.Input}
           placeholder={"Subject"}
           onChange={(e) => {
-            setName(e.target.value);
+            setSubject(e.target.value);
           }}
           required
         />
@@ -44,9 +44,10 @@ const ContactForm = () => {
           id=""
           cols="30"
           rows="10"
+          placeholder={"Message"}
           className={Styles.Input}
           onChange={(e) => {
-            setName(e.target.value);
+            setMessage(e.target.value);
           }}
           required
         ></textarea>
