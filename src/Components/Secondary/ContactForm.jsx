@@ -9,50 +9,63 @@ const ContactForm = () => {
 
   return (
     <div className={Styles.Section}>
-      <form className={Styles.Form}>
-        <div className={Styles.InputGroup}>
+      <div className={Styles.Content_Container}>
+        <h1
+          className={Styles.Title}
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          Contact Us
+        </h1>
+
+        <p
+          className={Styles.Description}
+          data-aos="fade-up"
+          data-aos-duration="1000"
+        >
+          If you are interested in becoming a member, then please complete and
+          submit the form below.
+        </p>
+
+        <form action="" className={Styles.Form}>
+          <fieldset className={Styles.Name__Eamil}>
+            <input
+              type="text"
+              placeholder="First Name"
+              required
+              className={Styles.Input}
+              onChange={(e) => {
+                setName(e.target.value);
+              }}
+            />
           <input
-            type="text"
-            className={Styles.Input}
-            placeholder={"Name"}
-            onChange={(e) => {
-              setName(e.target.value);
-            }}
+            type="Email"
+            placeholder="Email"
             required
+            className={Styles.Input}
           />
+          </fieldset>
           <input
-            type="email"
-            className={Styles.Input}
-            placeholder={"Email"}
-            onChange={(e) => {
-              setEmail(e.target.value);
-            }}
+            type="Text"
+            placeholder="Subject"
             required
+            className={`${Styles.Input} ${Styles.Subject}`}
           />
-        </div>
-        <input
-          type="test"
-          className={Styles.Input}
-          placeholder={"Subject"}
-          onChange={(e) => {
-            setSubject(e.target.value);
-          }}
-          required
-        />
-        <textarea
-          name=""
-          id=""
-          cols="30"
-          rows="10"
-          placeholder={"Message"}
-          className={Styles.Input}
-          onChange={(e) => {
-            setMessage(e.target.value);
-          }}
-          required
-        ></textarea>
-      </form>
-      <button className={Styles.SubmitButton} type={"Submit"}>Submit</button>
+          <textarea
+            name=""
+            id=""
+            cols="30"
+            rows="10"
+            placeholder="Message?"
+            required
+            className={`${Styles.Input} ${Styles.Message}`}
+          ></textarea>
+
+          <button type={"submit"} className={Styles.Submit_Button}>
+            Submit
+          </button>
+        </form>
+      </div>
     </div>
   );
 };

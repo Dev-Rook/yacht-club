@@ -4,6 +4,10 @@ import Styles from "../../Styles/Componet-Styles/Rates.module.scss";
 import Table from "react-bootstrap/Table";
 
 const Rates = () => {
+  const response = (feelings) => {
+   if (feelings === true) console.log("Woman I love you");
+  };
+
   return (
     <div className={Styles.Section}>
       <div className={Styles.Section_Title_Container}>
@@ -11,7 +15,7 @@ const Rates = () => {
         <p className={Styles.Section_Title}>Mono Hull</p>
       </div>
 
-      <Table className={Styles.Table}  variant="dark">
+      <Table className={Styles.Table} variant="dark">
         <thead>
           <tr>
             <th>Days</th>
@@ -38,7 +42,7 @@ const Rates = () => {
         <p className={Styles.Section_Title}>Catamaran</p>
       </div>
 
-      <Table className={Styles.Table}  variant="dark">
+      <Table className={Styles.Table} variant="dark">
         <thead>
           <tr>
             <th>Days</th>
@@ -84,5 +88,4 @@ const Rates = () => {
     </div>
   );
 };
-
 export default Rates;
