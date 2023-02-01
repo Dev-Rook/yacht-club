@@ -19,7 +19,7 @@ const Membership = () => {
       <PageHead Image={ClubFlag} Title={"Join Our Club?"} />
 
       <MembershipInfo />
-      <Benifits />
+      {/* <Benifits /> */}
       <MembershipForm />
     </div>
   );
